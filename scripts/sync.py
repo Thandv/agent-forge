@@ -65,7 +65,7 @@ def sha256(path: Path) -> str:
     return h.hexdigest()
 
 
-def detect_license(skill_dir: Path, fm: dict) -> str:
+def detect_license(skill_dir: Path, fm: dict, fallback: str = "") -> str:
     fm_lic = str(fm.get("license", "") or "")
     if "proprietary" in fm_lic.lower():
         return "Proprietary"
@@ -87,7 +87,8 @@ def detect_license(skill_dir: Path, fm: dict) -> str:
         return "BSD"
     if "isc license" in low:
         return "ISC"
-    return fm_lic or "UNKNOWN"
+    # No per-skill license detected -> inherit the source's declared license.
+    return fm_lic or fallback or "UNKNOWN"
 
 
 def normalize_model(model: str) -> str:
@@ -186,7 +187,7 @@ def vendor_skill(cache: Path, sk: str, source: dict, lock: dict,
         print(f"  REFERENCE skill {sk:<24} (no SKILL.md)")
         return
     fm, _ = common.parse_frontmatter((sdir / "SKILL.md").read_text(encoding="utf-8"))
-    lic = detect_license(sdir, fm)
+    lic = detect_license(sdir, fm, fallback=str(source.get("license", "") or ""))
     clean, reason = scan_clean(sdir)
     permissive = common.is_permissive(lic)
 

@@ -58,6 +58,19 @@ MIT license in `LICENSE` covers only this repo's original glue code.
 - `skill/theme-factory` — Apache-2.0 — `skills/theme-factory`
 - `skill/web-artifacts-builder` — Apache-2.0 — `skills/web-artifacts-builder`
 
+### https://github.com/obra/superpowers
+- Pinned commit: `6fd4507659784c351abbd2bc264c7162cfd386dc`
+- `skill/brainstorming` — MIT — `skills/brainstorming`
+- `skill/executing-plans` — MIT — `skills/executing-plans`
+- `skill/receiving-code-review` — MIT — `skills/receiving-code-review`
+- `skill/requesting-code-review` — MIT — `skills/requesting-code-review`
+- `skill/subagent-driven-development` — MIT — `skills/subagent-driven-development`
+- `skill/systematic-debugging` — MIT — `skills/systematic-debugging`
+- `skill/test-driven-development` — MIT — `skills/test-driven-development`
+- `skill/using-git-worktrees` — MIT — `skills/using-git-worktrees`
+- `skill/verification-before-completion` — MIT — `skills/verification-before-completion`
+- `skill/writing-plans` — MIT — `skills/writing-plans`
+
 ### https://github.com/wshobson/agents
 - Pinned commit: `0818067b4ecad18c234b2ae427cc44f2053792d4`
 - `agent/backend/backend-architect` — MIT — `plugins/backend-development/agents/backend-architect.md`

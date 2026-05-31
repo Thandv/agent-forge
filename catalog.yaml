@@ -1,6 +1,6 @@
 generated_from: sources/manifest.yaml
 counts:
-  vendored: 75
+  vendored: 85
   original: 3
   reference: 8
   submodule: 0
@@ -752,6 +752,16 @@ items:
       repo: "https://github.com/anthropics/skills"
       commit: da20c92503b2e8ff1cf28ca81a0df4673debdbf7
       path: skills/algorithmic-art
+  - id: skill/brainstorming
+    kind: skill
+    name: brainstorming
+    status: vendored
+    license: MIT
+    description: You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirem
+    source:
+      repo: "https://github.com/obra/superpowers"
+      commit: 6fd4507659784c351abbd2bc264c7162cfd386dc
+      path: skills/brainstorming
   - id: skill/brand-guidelines
     kind: skill
     name: brand-guidelines
@@ -813,6 +823,16 @@ items:
       repo: "https://github.com/anthropics/skills"
       commit: da20c92503b2e8ff1cf28ca81a0df4673debdbf7
       path: skills/docx
+  - id: skill/executing-plans
+    kind: skill
+    name: executing-plans
+    status: vendored
+    license: MIT
+    description: Use when you have a written implementation plan to execute in a separate session with review checkpoints
+    source:
+      repo: "https://github.com/obra/superpowers"
+      commit: 6fd4507659784c351abbd2bc264c7162cfd386dc
+      path: skills/executing-plans
   - id: skill/frontend-design
     kind: skill
     name: frontend-design
@@ -863,6 +883,26 @@ items:
       repo: "https://github.com/anthropics/skills"
       commit: da20c92503b2e8ff1cf28ca81a0df4673debdbf7
       path: skills/pptx
+  - id: skill/receiving-code-review
+    kind: skill
+    name: receiving-code-review
+    status: vendored
+    license: MIT
+    description: "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical "
+    source:
+      repo: "https://github.com/obra/superpowers"
+      commit: 6fd4507659784c351abbd2bc264c7162cfd386dc
+      path: skills/receiving-code-review
+  - id: skill/requesting-code-review
+    kind: skill
+    name: requesting-code-review
+    status: vendored
+    license: MIT
+    description: Use when completing tasks, implementing major features, or before merging to verify work meets requirements
+    source:
+      repo: "https://github.com/obra/superpowers"
+      commit: 6fd4507659784c351abbd2bc264c7162cfd386dc
+      path: skills/requesting-code-review
   - id: skill/skill-creator
     kind: skill
     name: skill-creator
@@ -883,6 +923,36 @@ items:
       repo: "https://github.com/anthropics/skills"
       commit: da20c92503b2e8ff1cf28ca81a0df4673debdbf7
       path: skills/slack-gif-creator
+  - id: skill/subagent-driven-development
+    kind: skill
+    name: subagent-driven-development
+    status: vendored
+    license: MIT
+    description: Use when executing implementation plans with independent tasks in the current session
+    source:
+      repo: "https://github.com/obra/superpowers"
+      commit: 6fd4507659784c351abbd2bc264c7162cfd386dc
+      path: skills/subagent-driven-development
+  - id: skill/systematic-debugging
+    kind: skill
+    name: systematic-debugging
+    status: vendored
+    license: MIT
+    description: Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes
+    source:
+      repo: "https://github.com/obra/superpowers"
+      commit: 6fd4507659784c351abbd2bc264c7162cfd386dc
+      path: skills/systematic-debugging
+  - id: skill/test-driven-development
+    kind: skill
+    name: test-driven-development
+    status: vendored
+    license: MIT
+    description: Use when implementing any feature or bugfix, before writing implementation code
+    source:
+      repo: "https://github.com/obra/superpowers"
+      commit: 6fd4507659784c351abbd2bc264c7162cfd386dc
+      path: skills/test-driven-development
   - id: skill/theme-factory
     kind: skill
     name: theme-factory
@@ -904,6 +974,26 @@ items:
       repo: original
       commit: original
       path: registry/skills/token-budget
+  - id: skill/using-git-worktrees
+    kind: skill
+    name: using-git-worktrees
+    status: vendored
+    license: MIT
+    description: Use when starting feature work that needs isolation from current workspace or before executing implementation plans - ensures an isolated workspace exists via n
+    source:
+      repo: "https://github.com/obra/superpowers"
+      commit: 6fd4507659784c351abbd2bc264c7162cfd386dc
+      path: skills/using-git-worktrees
+  - id: skill/verification-before-completion
+    kind: skill
+    name: verification-before-completion
+    status: vendored
+    license: MIT
+    description: Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output be
+    source:
+      repo: "https://github.com/obra/superpowers"
+      commit: 6fd4507659784c351abbd2bc264c7162cfd386dc
+      path: skills/verification-before-completion
   - id: skill/web-artifacts-builder
     kind: skill
     name: web-artifacts-builder
@@ -924,6 +1014,16 @@ items:
       repo: "https://github.com/anthropics/skills"
       commit: da20c92503b2e8ff1cf28ca81a0df4673debdbf7
       path: skills/webapp-testing
+  - id: skill/writing-plans
+    kind: skill
+    name: writing-plans
+    status: vendored
+    license: MIT
+    description: Use when you have a spec or requirements for a multi-step task, before touching code
+    source:
+      repo: "https://github.com/obra/superpowers"
+      commit: 6fd4507659784c351abbd2bc264c7162cfd386dc
+      path: skills/writing-plans
   - id: skill/xlsx
     kind: skill
     name: xlsx
