@@ -1,0 +1,43 @@
+name: refresh
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"   # weekly, Monday 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Bump pinned SHAs + re-vendor through the gate
+        run: python3 scripts/refresh.py
+
+      - name: Re-validate (schema + license + security gate)
+        run: python3 scripts/validate.py
+
+      - name: Open PR if anything changed
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -z "$(git status --porcelain -- sources registry catalog.yaml plugins .claude-plugin)" ]; then
+            echo "No content changes — nothing to PR."
+            exit 0
+          fi
+          branch="refresh/auto-$(date +%Y%m%d%H%M)"
+          git config user.name "agent-forge-bot"
+          git config user.email "actions@github.com"
+          git checkout -b "$branch"
+          git add -A sources registry catalog.yaml plugins .claude-plugin
+          git commit -m "chore: refresh vendored content to latest upstream commits"
+          git push -u origin "$branch"
+          gh pr create --title "Refresh vendored content to latest upstreams" \
+            --body-file .refresh-summary.md --base main --head "$branch"
