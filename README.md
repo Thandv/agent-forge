@@ -118,6 +118,14 @@ python3 builder/compose.py      # merge content sources (local or pinned git) in
 Demonstrated round trip: monorepo → `split.py` → bundles → `compose.py` →
 identical image. See [docs/roadmap-split.md](docs/roadmap-split.md).
 
+The 15 per-domain repos are published under
+[`Thandv/agent-forge-*`](https://github.com/Thandv?tab=repositories&q=agent-forge-)
+(each with its own CI). Compose them straight from the live remotes:
+
+```bash
+python3 builder/compose.py --sources builder/sources.remote.example.yaml
+```
+
 ## Documentation
 
 - [docs/architecture.md](docs/architecture.md) — canonical formats & adapter contract

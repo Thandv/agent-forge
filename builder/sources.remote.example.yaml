@@ -1,0 +1,22 @@
+# Example: compose the published per-domain repos (Thandv/agent-forge-*).
+# Each pinned to its current main SHA. Regenerate SHAs as the repos evolve.
+# Usage: python3 builder/compose.py --sources builder/sources.remote.example.yaml
+
+out: dist
+tools: [claude-code, claude-plugin, codex, cursor, gemini]
+sources:
+  - {id: optimization, repo: https://github.com/Thandv/agent-forge-optimization, commit: fa52feb8336611656b3e23f9e2cb90a15f267ef1}
+  - {id: skills, repo: https://github.com/Thandv/agent-forge-skills, commit: 80b3f84b60852151bb04537b7136ea58f396427f}
+  - {id: experts, repo: https://github.com/Thandv/agent-forge-experts, commit: 96f94e75a44acc7c6cd7b60ce9c14982011ece81}
+  - {id: backend, repo: https://github.com/Thandv/agent-forge-backend, commit: 8451850a74da60f5497b9ddc1753fce199bf6fff}
+  - {id: frontend, repo: https://github.com/Thandv/agent-forge-frontend, commit: 3cd7c21e861fde48f2403ee2a463d97e75dfd315}
+  - {id: languages, repo: https://github.com/Thandv/agent-forge-languages, commit: 116704a5b59e260e658ec42997b1e6793a914f9d}
+  - {id: review, repo: https://github.com/Thandv/agent-forge-review, commit: 19cdad74d68126283f211657f3f7794c8834c9ce}
+  - {id: security, repo: https://github.com/Thandv/agent-forge-security, commit: 25035304b80f5ee4790511eceeb8917df5d15f73}
+  - {id: devops, repo: https://github.com/Thandv/agent-forge-devops, commit: 9c1d1241101be28ed124dee436fd94e589fa87c1}
+  - {id: data, repo: https://github.com/Thandv/agent-forge-data, commit: 754b47d1f97761ac98aaa43d3aadf6b098c086e4}
+  - {id: docs, repo: https://github.com/Thandv/agent-forge-docs, commit: 9b767ce8222076cac78fe4f3cc5d74e64ac6410e}
+  - {id: meta, repo: https://github.com/Thandv/agent-forge-meta, commit: 5d4e3048281d83fed5deb1161fa76657b365275d}
+  - {id: product, repo: https://github.com/Thandv/agent-forge-product, commit: b44e6324ba8d8807e639620a63fb410f8adff1c5}
+  - {id: research, repo: https://github.com/Thandv/agent-forge-research, commit: 162a27f48e264bc0ce438a861eff2356381cf0f6}
+  - {id: specialized, repo: https://github.com/Thandv/agent-forge-specialized, commit: 3706f17fed6be3d9b6f03c1b35f5a90a8b1c0077}
