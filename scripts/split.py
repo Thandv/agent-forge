@@ -76,14 +76,8 @@ def _sha256(p: Path) -> str:
     return hashlib.sha256(p.read_bytes()).hexdigest()
 
 
-def main(argv: list[str] | None = None) -> int:
-    ap = argparse.ArgumentParser(description="Split the registry into per-domain content bundles.")
-    ap.add_argument("--out", default=str(ROOT / "split-out"))
-    ap.add_argument("--git-init", action="store_true",
-                    help="initialize each bundle as its own git repo with an initial commit")
-    args = ap.parse_args(argv)
-
-    out = Path(args.out)
+def export_bundles(out: Path) -> list[tuple[str, Path, int]]:
+    """Write all per-domain bundles into `out`. Returns (name, dir, item_count)."""
     if out.exists():
         shutil.rmtree(out)
     items = common.load_registry(ROOT / "registry")
@@ -92,6 +86,7 @@ def main(argv: list[str] | None = None) -> int:
     for it in items:
         groups.setdefault(_bundle_for(it), []).append(it)
 
+    result: list[tuple[str, Path, int]] = []
     for bundle, group in sorted(groups.items()):
         bdir = out / bundle
         (bdir / "scripts").mkdir(parents=True, exist_ok=True)
@@ -134,14 +129,27 @@ def main(argv: list[str] | None = None) -> int:
         for it in sorted(group, key=lambda x: x.id):
             tp.append(f"- `{it.id}` — {it.license} — {it.source_repo or 'original'}")
         (bdir / "THIRD_PARTY.md").write_text("\n".join(tp) + "\n", encoding="utf-8")
+        result.append((bundle, bdir, len(group)))
+    return result
 
+
+def main(argv: list[str] | None = None) -> int:
+    ap = argparse.ArgumentParser(description="Split the registry into per-domain content bundles.")
+    ap.add_argument("--out", default=str(ROOT / "split-out"))
+    ap.add_argument("--git-init", action="store_true",
+                    help="initialize each bundle as its own git repo with an initial commit")
+    args = ap.parse_args(argv)
+
+    out = Path(args.out)
+    bundles = export_bundles(out)
+    for bundle, bdir, count in bundles:
         head = ""
         if args.git_init:
             head = " @" + _git_init(bdir, bundle)
-        print(f"  bundle {bundle:<28} {len(group)} item(s){head}")
+        print(f"  bundle {bundle:<28} {count} item(s){head}")
 
     mode = " (git repos)" if args.git_init else ""
-    print(f"\nsplit: {len(groups)} bundle(s){mode} -> {out}")
+    print(f"\nsplit: {len(bundles)} bundle(s){mode} -> {out}")
     return 0
 
 

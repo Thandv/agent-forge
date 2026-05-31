@@ -1,5 +1,5 @@
 # agent-forge — convenience targets (thin wrappers over scripts/).
-.PHONY: help sync validate build marketplace install dry-run test split compose clean
+.PHONY: help sync validate build marketplace install dry-run test split sync-splits compose clean
 
 help:
 	@echo "agent-forge targets:"
@@ -36,6 +36,9 @@ test:
 
 split:
 	python3 scripts/split.py $(if $(GIT_INIT),--git-init,)
+
+sync-splits:
+	python3 scripts/sync_splits.py $(if $(DRY),--dry-run,)
 
 compose:
 	python3 builder/compose.py --tool $(or $(TOOL),all)

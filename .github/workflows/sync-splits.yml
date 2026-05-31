@@ -1,0 +1,36 @@
+name: sync-splits
+
+# When the registry (or the gate scripts the bundles carry) changes on main,
+# push the affected per-domain content out to the split repos (Thandv/agent-forge-*).
+# Cross-repo pushes need a PAT with `repo` scope stored as the SPLIT_PUSH_TOKEN
+# secret; without it this job skips cleanly.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "registry/**"
+      - "catalog.yaml"
+      - "scripts/scan.py"
+      - "scripts/validate.py"
+      - "adapters/common.py"
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Push registry changes to split repos
+        env:
+          SPLIT_PUSH_TOKEN: ${{ secrets.SPLIT_PUSH_TOKEN }}
+        run: |
+          if [ -z "$SPLIT_PUSH_TOKEN" ]; then
+            echo "SPLIT_PUSH_TOKEN not set — skipping split sync."
+            echo "Add a PAT with 'repo' scope as the SPLIT_PUSH_TOKEN secret to enable."
+            exit 0
+          fi
+          python3 scripts/sync_splits.py --owner Thandv --token "$SPLIT_PUSH_TOKEN"

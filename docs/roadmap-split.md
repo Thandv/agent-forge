@@ -65,6 +65,23 @@ builder/
 The builder re-runs `scan.py` across the merged tree (defense in depth — it does
 not trust a content repo's own green CI) before emitting the image.
 
+## Keeping the split repos in sync (live today)
+
+`scripts/sync_splits.py` regenerates every bundle from the monorepo registry and
+pushes **only the repos whose content changed** to `Thandv/agent-forge-*`
+(idempotent; `--dry-run` to preview). The `sync-splits.yml` workflow runs it on
+every push to `main` that touches `registry/`, `catalog.yaml`, or the bundled
+gate scripts — so an auto-refresh PR merging into `main` fans out to the split
+repos automatically. Cross-repo pushes need a `SPLIT_PUSH_TOKEN` secret (a PAT
+with `repo` scope); without it the job skips cleanly.
+
+Full automated chain:
+
+```
+upstream commit → refresh.yml (weekly) → PR (gated) → merge to main
+   → sync-splits.yml → 15 per-domain repos updated
+```
+
 ## Why it works without rework
 
 - Adapters already consume `common.load_registry()` over a `registry/` tree — they
