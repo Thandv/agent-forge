@@ -2,6 +2,8 @@
 
 [![ci](https://github.com/Thandv/agent-forge/actions/workflows/ci.yml/badge.svg)](https://github.com/Thandv/agent-forge/actions/workflows/ci.yml)
 
+📚 **[Browse the catalog](https://thandv.github.io/agent-forge/)** — searchable index of every agent & skill, generated from `catalog.yaml`.
+
 A unified, **security-gated**, **multi-tool** collection of the best open-source
 AI coding **agents** and **skills** — vendored from top-rated repositories, kept
 in one tool-agnostic source of truth, and rendered into native formats you can
