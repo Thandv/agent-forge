@@ -24,6 +24,28 @@ MIT license in `LICENSE` covers only this repo's original glue code.
 - `agent/experts/tailwind-expert` — MIT — `agents/tailwind-expert.md`
 - `agent/experts/vue-expert` — MIT — `agents/vue-expert.md`
 
+### https://github.com/VoltAgent/awesome-claude-code-subagents
+- Pinned commit: `2f9cf8b9562dcc235cc2296bda6df82d60e800be`
+- `agent/meta/agent-organizer` — MIT — `categories/09-meta-orchestration/agent-organizer.md`
+- `agent/meta/error-coordinator` — MIT — `categories/09-meta-orchestration/error-coordinator.md`
+- `agent/meta/knowledge-synthesizer` — MIT — `categories/09-meta-orchestration/knowledge-synthesizer.md`
+- `agent/meta/multi-agent-coordinator` — MIT — `categories/09-meta-orchestration/multi-agent-coordinator.md`
+- `agent/meta/workflow-orchestrator` — MIT — `categories/09-meta-orchestration/workflow-orchestrator.md`
+- `agent/product/business-analyst` — MIT — `categories/08-business-product/business-analyst.md`
+- `agent/product/product-manager` — MIT — `categories/08-business-product/product-manager.md`
+- `agent/product/scrum-master` — MIT — `categories/08-business-product/scrum-master.md`
+- `agent/product/technical-writer` — MIT — `categories/08-business-product/technical-writer.md`
+- `agent/product/ux-researcher` — MIT — `categories/08-business-product/ux-researcher.md`
+- `agent/research/competitive-analyst` — MIT — `categories/10-research-analysis/competitive-analyst.md`
+- `agent/research/market-researcher` — MIT — `categories/10-research-analysis/market-researcher.md`
+- `agent/research/research-analyst` — MIT — `categories/10-research-analysis/research-analyst.md`
+- `agent/research/trend-analyst` — MIT — `categories/10-research-analysis/trend-analyst.md`
+- `agent/specialized/blockchain-developer` — MIT — `categories/07-specialized-domains/blockchain-developer.md`
+- `agent/specialized/embedded-systems` — MIT — `categories/07-specialized-domains/embedded-systems.md`
+- `agent/specialized/fintech-engineer` — MIT — `categories/07-specialized-domains/fintech-engineer.md`
+- `agent/specialized/game-developer` — MIT — `categories/07-specialized-domains/game-developer.md`
+- `agent/specialized/mobile-app-developer` — MIT — `categories/07-specialized-domains/mobile-app-developer.md`
+
 ### https://github.com/anthropics/skills
 - Pinned commit: `da20c92503b2e8ff1cf28ca81a0df4673debdbf7`
 - `skill/algorithmic-art` — Apache-2.0 — `skills/algorithmic-art`

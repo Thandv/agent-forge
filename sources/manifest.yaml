@@ -178,3 +178,37 @@ sources:
       - {src: agents/mongodb-expert.md,      name: mongodb-expert,      domain: experts}
       - {src: agents/kafka-expert.md,        name: kafka-expert,        domain: experts}
       - {src: agents/react-native-expert.md, name: react-native-expert, domain: experts}
+
+  - id: voltagent-subagents
+    repo: https://github.com/VoltAgent/awesome-claude-code-subagents
+    commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+    license: MIT
+    kind: agents
+    mode: vendor
+    # Breadth across non-engineering domains the role/expert sets don't cover.
+    # Curated from the upstream's 10 categories. New domains: meta, product,
+    # research, specialized.
+    agents:
+      # meta-orchestration
+      - {src: categories/09-meta-orchestration/agent-organizer.md,        name: agent-organizer,        domain: meta}
+      - {src: categories/09-meta-orchestration/multi-agent-coordinator.md, name: multi-agent-coordinator, domain: meta}
+      - {src: categories/09-meta-orchestration/workflow-orchestrator.md,   name: workflow-orchestrator,   domain: meta}
+      - {src: categories/09-meta-orchestration/knowledge-synthesizer.md,   name: knowledge-synthesizer,   domain: meta}
+      - {src: categories/09-meta-orchestration/error-coordinator.md,       name: error-coordinator,       domain: meta}
+      # business / product
+      - {src: categories/08-business-product/product-manager.md,  name: product-manager,  domain: product}
+      - {src: categories/08-business-product/business-analyst.md, name: business-analyst, domain: product}
+      - {src: categories/08-business-product/technical-writer.md, name: technical-writer, domain: product}
+      - {src: categories/08-business-product/ux-researcher.md,    name: ux-researcher,    domain: product}
+      - {src: categories/08-business-product/scrum-master.md,     name: scrum-master,     domain: product}
+      # research / analysis
+      - {src: categories/10-research-analysis/research-analyst.md,    name: research-analyst,    domain: research}
+      - {src: categories/10-research-analysis/competitive-analyst.md, name: competitive-analyst, domain: research}
+      - {src: categories/10-research-analysis/market-researcher.md,   name: market-researcher,   domain: research}
+      - {src: categories/10-research-analysis/trend-analyst.md,       name: trend-analyst,       domain: research}
+      # specialized domains
+      - {src: categories/07-specialized-domains/blockchain-developer.md, name: blockchain-developer, domain: specialized}
+      - {src: categories/07-specialized-domains/game-developer.md,       name: game-developer,       domain: specialized}
+      - {src: categories/07-specialized-domains/embedded-systems.md,     name: embedded-systems,     domain: specialized}
+      - {src: categories/07-specialized-domains/fintech-engineer.md,     name: fintech-engineer,     domain: specialized}
+      - {src: categories/07-specialized-domains/mobile-app-developer.md, name: mobile-app-developer, domain: specialized}

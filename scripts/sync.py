@@ -143,17 +143,25 @@ def vendor_agent(cache: Path, src: str, name: str, domain: str,
         return
 
     fm, body = common.parse_frontmatter(spath.read_text(encoding="utf-8"))
+    tools_raw = fm.get("tools")
+    if isinstance(tools_raw, str):
+        tools = [t.strip() for t in tools_raw.split(",") if t.strip()]
+    else:
+        tools = common._as_list(tools_raw)
     out_fm = {
         "name": name,
         "description": str(fm.get("description", "")),
         "domain": domain,
         "model": normalize_model(str(fm.get("model", "") or "")),
         "tags": common._as_list(fm.get("tags")),
+        "tools": tools,
         "source": {"repo": source["repo"], "commit": str(source["commit"]), "path": src},
         "license": lic,
     }
     if not out_fm["tags"]:
         del out_fm["tags"]
+    if not out_fm["tools"]:
+        del out_fm["tools"]
     out_dir = REG / "agents" / domain / name
     out_dir.mkdir(parents=True, exist_ok=True)
     out_file = out_dir / "agent.md"

@@ -1,6 +1,6 @@
 generated_from: sources/manifest.yaml
 counts:
-  vendored: 56
+  vendored: 75
   original: 3
   reference: 8
   submodule: 0
@@ -401,6 +401,61 @@ items:
       repo: "https://github.com/wshobson/agents"
       commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
       path: plugins/javascript-typescript/agents/typescript-pro.md
+  - id: agent/meta/agent-organizer
+    kind: agent
+    name: agent-organizer
+    domain: meta
+    status: vendored
+    license: MIT
+    description: Use when assembling and optimizing multi-agent teams to execute complex projects that require careful task decomposition, agent capability matching, and workflo
+    source:
+      repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
+      commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+      path: categories/09-meta-orchestration/agent-organizer.md
+  - id: agent/meta/error-coordinator
+    kind: agent
+    name: error-coordinator
+    domain: meta
+    status: vendored
+    license: MIT
+    description: "Use this agent when distributed system errors occur and need coordinated handling across multiple components, or when you need to implement comprehensive error "
+    source:
+      repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
+      commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+      path: categories/09-meta-orchestration/error-coordinator.md
+  - id: agent/meta/knowledge-synthesizer
+    kind: agent
+    name: knowledge-synthesizer
+    domain: meta
+    status: vendored
+    license: MIT
+    description: Use when you need to extract actionable patterns from agent interactions, synthesize insights across multiple workflows, and enable organizational learning from
+    source:
+      repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
+      commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+      path: categories/09-meta-orchestration/knowledge-synthesizer.md
+  - id: agent/meta/multi-agent-coordinator
+    kind: agent
+    name: multi-agent-coordinator
+    domain: meta
+    status: vendored
+    license: MIT
+    description: Use when coordinating multiple concurrent agents that need to communicate, share state, synchronize work, and handle distributed failures across a system.
+    source:
+      repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
+      commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+      path: categories/09-meta-orchestration/multi-agent-coordinator.md
+  - id: agent/meta/workflow-orchestrator
+    kind: agent
+    name: workflow-orchestrator
+    domain: meta
+    status: vendored
+    license: MIT
+    description: Use this agent when you need to design, implement, or optimize complex business process workflows with multiple states, error handling, and transaction manageme
+    source:
+      repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
+      commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+      path: categories/09-meta-orchestration/workflow-orchestrator.md
   - id: agent/optimization/context-manager
     kind: agent
     name: context-manager
@@ -434,6 +489,105 @@ items:
       repo: original
       commit: original
       path: registry/agents/optimization/token-optimizer/agent.md
+  - id: agent/product/business-analyst
+    kind: agent
+    name: business-analyst
+    domain: product
+    status: vendored
+    license: MIT
+    description: Use when analyzing business processes, gathering requirements from stakeholders, or identifying process improvement opportunities to drive operational efficienc
+    source:
+      repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
+      commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+      path: categories/08-business-product/business-analyst.md
+  - id: agent/product/product-manager
+    kind: agent
+    name: product-manager
+    domain: product
+    status: vendored
+    license: MIT
+    description: Use this agent when you need to make product strategy decisions, prioritize features, or define roadmap plans based on user needs and business goals.
+    source:
+      repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
+      commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+      path: categories/08-business-product/product-manager.md
+  - id: agent/product/scrum-master
+    kind: agent
+    name: scrum-master
+    domain: product
+    status: vendored
+    license: MIT
+    description: Use when teams need facilitation, process optimization, velocity improvement, or agile ceremony management—especially for sprint planning, retrospectives, imped
+    source:
+      repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
+      commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+      path: categories/08-business-product/scrum-master.md
+  - id: agent/product/technical-writer
+    kind: agent
+    name: technical-writer
+    domain: product
+    status: vendored
+    license: MIT
+    description: Use this agent when you need to create, improve, or maintain technical documentation including API references, user guides, SDK documentation, and getting-start
+    source:
+      repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
+      commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+      path: categories/08-business-product/technical-writer.md
+  - id: agent/product/ux-researcher
+    kind: agent
+    name: ux-researcher
+    domain: product
+    status: vendored
+    license: MIT
+    description: Use this agent when you need to conduct user research, analyze user behavior, or generate actionable insights to validate design decisions and uncover user need
+    source:
+      repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
+      commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+      path: categories/08-business-product/ux-researcher.md
+  - id: agent/research/competitive-analyst
+    kind: agent
+    name: competitive-analyst
+    domain: research
+    status: vendored
+    license: MIT
+    description: "Use when you need to analyze direct and indirect competitors, benchmark against market leaders, or develop strategies to strengthen competitive positioning and "
+    source:
+      repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
+      commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+      path: categories/10-research-analysis/competitive-analyst.md
+  - id: agent/research/market-researcher
+    kind: agent
+    name: market-researcher
+    domain: research
+    status: vendored
+    license: MIT
+    description: Use this agent when you need to analyze markets, understand consumer behavior, assess competitive landscapes, and size opportunities to inform business strategy
+    source:
+      repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
+      commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+      path: categories/10-research-analysis/market-researcher.md
+  - id: agent/research/research-analyst
+    kind: agent
+    name: research-analyst
+    domain: research
+    status: vendored
+    license: MIT
+    description: Use this agent when you need comprehensive research across multiple sources with synthesis of findings into actionable insights, trend identification, and detai
+    source:
+      repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
+      commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+      path: categories/10-research-analysis/research-analyst.md
+  - id: agent/research/trend-analyst
+    kind: agent
+    name: trend-analyst
+    domain: research
+    status: vendored
+    license: MIT
+    description: Use when analyzing emerging patterns, predicting industry shifts, or developing future scenarios to inform strategic planning and competitive positioning.
+    source:
+      repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
+      commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+      path: categories/10-research-analysis/trend-analyst.md
   - id: agent/review/architect-review
     kind: agent
     name: architect-review
@@ -533,6 +687,61 @@ items:
       repo: "https://github.com/wshobson/agents"
       commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
       path: plugins/security-scanning/agents/threat-modeling-expert.md
+  - id: agent/specialized/blockchain-developer
+    kind: agent
+    name: blockchain-developer
+    domain: specialized
+    status: vendored
+    license: MIT
+    description: "Use this agent when building smart contracts, DApps, and blockchain protocols that require expertise in Solidity, gas optimization, security auditing, and Web3 "
+    source:
+      repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
+      commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+      path: categories/07-specialized-domains/blockchain-developer.md
+  - id: agent/specialized/embedded-systems
+    kind: agent
+    name: embedded-systems
+    domain: specialized
+    status: vendored
+    license: MIT
+    description: Use when developing firmware for resource-constrained microcontrollers, implementing RTOS-based applications, or optimizing real-time systems where hardware con
+    source:
+      repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
+      commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+      path: categories/07-specialized-domains/embedded-systems.md
+  - id: agent/specialized/fintech-engineer
+    kind: agent
+    name: fintech-engineer
+    domain: specialized
+    status: vendored
+    license: MIT
+    description: Use when building payment systems, financial integrations, or compliance-heavy financial applications that require secure transaction processing, regulatory adh
+    source:
+      repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
+      commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+      path: categories/07-specialized-domains/fintech-engineer.md
+  - id: agent/specialized/game-developer
+    kind: agent
+    name: game-developer
+    domain: specialized
+    status: vendored
+    license: MIT
+    description: Use this agent when implementing game systems, optimizing graphics rendering, building multiplayer networking, or developing gameplay mechanics for games target
+    source:
+      repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
+      commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+      path: categories/07-specialized-domains/game-developer.md
+  - id: agent/specialized/mobile-app-developer
+    kind: agent
+    name: mobile-app-developer
+    domain: specialized
+    status: vendored
+    license: MIT
+    description: Use this agent when developing iOS and Android mobile applications with focus on native or cross-platform implementation, performance optimization, and platform
+    source:
+      repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
+      commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+      path: categories/07-specialized-domains/mobile-app-developer.md
   - id: skill/algorithmic-art
     kind: skill
     name: algorithmic-art
