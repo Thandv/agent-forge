@@ -20,7 +20,13 @@ As long as a content repo honors these, the builder can consume it.
 Content (`registry/`, `sources/`) and builder (`adapters/`, `scripts/`) live
 together. Good for iterating quickly.
 
-## Phase 2 — split content out
+## Phase 2 — split content out  ✅ tooling shipped
+
+> Run `python3 scripts/split.py` to export the current monorepo registry into
+> per-domain content bundles under `split-out/agent-forge-<domain>/`. Each bundle
+> is self-contained (its own `registry/`, `catalog.yaml`, `sources/lock.json`, and
+> a copy of the gate scripts) and runs `python3 scripts/validate.py` on its own.
+> These bundles are the seed of the separate content repos.
 
 Lift each domain (or each upstream) into its own repo, each self-contained with
 its own `registry/`, `sources/manifest.yaml`, `catalog.yaml`, and `THIRD_PARTY.md`:
@@ -35,7 +41,13 @@ Each runs the *same* `scan.py` + `validate.py` in its own CI, so the security ga
 travels with the content. Nothing about the file layout changes — just the repo
 boundary.
 
-## Phase 3 — the builder repo
+## Phase 3 — the builder repo  ✅ seed shipped
+
+> `builder/compose.py` + `builder/sources.yaml` already implement this: they merge
+> N content sources (local paths or pinned git repos), de-dup by id with
+> precedence, re-scan the merged tree, and render `dist/<tool>/`. Demonstrated
+> round trip: monorepo → `split.py` → bundles → `compose.py` → identical image.
+> See [builder/README.md](../builder/README.md).
 
 Extract `adapters/` + `scripts/build.py` + `install.py` into a standalone
 **builder** repo. It takes a list of content sources (git URLs or local paths),

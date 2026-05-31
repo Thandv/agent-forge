@@ -57,7 +57,27 @@ rm -rf /tmp/af-test-inst
 python3 scripts/install.py --tool claude-code --target /tmp/af-test-inst --dist /tmp/af-test-dist --dry-run >/dev/null 2>&1
 if [ ! -d /tmp/af-test-inst ]; then pass "dry-run wrote nothing"; else fail "dry-run created files"; fi
 
-rm -rf /tmp/af-test-dist /tmp/af-test-inst
+echo "== split: export per-domain bundles (offline) =="
+rm -rf /tmp/af-split
+python3 scripts/split.py --out /tmp/af-split >/dev/null 2>&1
+expect_exit 0 $? "split produces bundles"
+if [ -f /tmp/af-split/agent-forge-optimization/catalog.yaml ]; then pass "optimization bundle exists"; else fail "optimization bundle missing"; fi
+( cd /tmp/af-split/agent-forge-optimization && python3 scripts/validate.py >/dev/null 2>&1 )
+expect_exit 0 $? "split bundle self-validates"
+
+echo "== compose: recombine bundles into one image (offline) =="
+cat > /tmp/af-src.yaml <<EOF
+out: dist
+tools: [claude-code]
+sources:
+  - {id: opt, path: /tmp/af-split/agent-forge-optimization}
+  - {id: skl, path: /tmp/af-split/agent-forge-skills}
+EOF
+python3 builder/compose.py --sources /tmp/af-src.yaml --out /tmp/af-compose --tool claude-code >/dev/null 2>&1
+expect_exit 0 $? "compose merges bundles"
+if [ -d /tmp/af-compose/claude-code/agents ]; then pass "composed image rendered"; else fail "composed image missing"; fi
+
+rm -rf /tmp/af-test-dist /tmp/af-test-inst /tmp/af-split /tmp/af-compose /tmp/af-src.yaml
 echo
 if [ "$fails" -eq 0 ]; then echo "ALL TESTS PASSED"; else echo "$fails TEST(S) FAILED"; fi
 exit $((fails > 0 ? 1 : 0))

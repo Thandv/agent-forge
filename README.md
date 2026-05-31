@@ -24,13 +24,15 @@ upstreams ──sync(scan+license gate)──► registry/ (canonical) ──bui
 
 ## What's inside (current seed)
 
-- **32 agents** across `optimization`, `backend`, `languages`, `frontend`,
-  `review`, `security`, `devops`, `data`, `docs` — vendored from
-  [wshobson/agents](https://github.com/wshobson/agents) (MIT), plus the original
-  **`token-optimizer`** agent.
-- **9 skills** (Apache-2.0) vendored from
-  [anthropics/skills](https://github.com/anthropics/skills); proprietary or
-  flagged skills are listed as references, not copied.
+- **48 agents** across `optimization`, `backend`, `languages`, `frontend`,
+  `review`, `security`, `devops`, `data`, `docs`, `experts` — vendored from
+  [wshobson/agents](https://github.com/wshobson/agents) (MIT, role-based) and
+  [0xfurai/claude-code-subagents](https://github.com/0xfurai/claude-code-subagents)
+  (MIT, framework/tech experts), plus the original **`token-optimizer`** agent.
+- **11 skills**: 9 (Apache-2.0) vendored from
+  [anthropics/skills](https://github.com/anthropics/skills) + 2 original token
+  skills (`token-budget`, `context-compaction`). Proprietary or flagged skills are
+  listed as references, not copied.
 
 Token/context-efficiency is a first-class domain: see
 `registry/agents/optimization/` — **`context-manager`**, **`prompt-engineer`**,
@@ -80,12 +82,26 @@ before rendering, so unsafe content can never reach `dist/`.
 ```
 registry/        canonical source of truth (agents/<domain>/<name>/agent.md, skills/<name>/SKILL.md)
 adapters/        per-tool emitters (claude_code, codex, cursor, gemini) + common.py
-scripts/         sync, validate, scan, build, install (.sh wrappers over .py)
+scripts/         sync, validate, scan, build, install, split (.sh wrappers over .py)
+builder/         compose.py + sources.yaml — merge N content sources into one image
 sources/         manifest.yaml (pinned SHAs) + lock.json (file hashes)
 dist/            generated per-tool images (gitignored)
 docs/            architecture, adding-content, roadmap-split
 catalog.yaml     master index   ·   THIRD_PARTY.md   attributions   ·   SECURITY.md   policy
 ```
+
+## Scaling to many repos (the split)
+
+The repo is built to split into per-domain content repos + a standalone builder,
+with `catalog.yaml` as the contract. The tooling already exists:
+
+```bash
+python3 scripts/split.py        # export split-out/agent-forge-<domain>/ self-contained bundles
+python3 builder/compose.py      # merge content sources (local or pinned git) into one image
+```
+
+Demonstrated round trip: monorepo → `split.py` → bundles → `compose.py` →
+identical image. See [docs/roadmap-split.md](docs/roadmap-split.md).
 
 ## Documentation
 

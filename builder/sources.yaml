@@ -1,0 +1,28 @@
+# Builder sources — the content this builder composes into one image.
+#
+# Each source is either:
+#   path:   <local path> (relative to the repo root, or absolute) containing a registry/
+#   repo + commit:  a git content repo pinned to an exact SHA (cloned into builder/.cache/)
+# precedence: higher wins when two sources define the same item id (default 0).
+#
+# Default: compose the monorepo's own registry. To compose split content
+# bundles instead, point sources at split-out/agent-forge-* (see
+# scripts/split.py and docs/roadmap-split.md). Example (commented):
+#
+# sources:
+#   - id: optimization
+#     path: split-out/agent-forge-optimization
+#     precedence: 10
+#   - id: skills
+#     path: split-out/agent-forge-skills
+#   - id: community-security
+#     repo: https://github.com/your-org/agent-forge-security
+#     commit: <full-40-char-sha>
+#     precedence: 5
+
+out: dist
+tools: [claude-code, codex, cursor, gemini]
+sources:
+  - id: monorepo
+    path: .
+    precedence: 0
