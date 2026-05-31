@@ -90,6 +90,22 @@ def detect_license(skill_dir: Path, fm: dict) -> str:
     return fm_lic or "UNKNOWN"
 
 
+def normalize_model(model: str) -> str:
+    """Map upstream dated/pinned model snapshots to 'inherit' for portability.
+
+    e.g. 'claude-sonnet-4-20250514' -> 'inherit'. Generic aliases pass through.
+    """
+    m = (model or "").strip()
+    if not m:
+        return "inherit"
+    low = m.lower()
+    if any(ch.isdigit() for ch in low) and ("-202" in low or low.count("-") >= 2):
+        return "inherit"
+    if low.startswith("claude-") or low.startswith("gpt-") or low.startswith("gemini-"):
+        return "inherit"
+    return m
+
+
 def scan_clean(path: Path) -> tuple[bool, str]:
     findings = scanner.scan_path(path)
     worst = scanner.worst_severity(findings)
@@ -131,7 +147,7 @@ def vendor_agent(cache: Path, src: str, name: str, domain: str,
         "name": name,
         "description": str(fm.get("description", "")),
         "domain": domain,
-        "model": str(fm.get("model", "inherit") or "inherit"),
+        "model": normalize_model(str(fm.get("model", "") or "")),
         "tags": common._as_list(fm.get("tags")),
         "source": {"repo": source["repo"], "commit": str(source["commit"]), "path": src},
         "license": lic,

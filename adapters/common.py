@@ -64,6 +64,15 @@ def _scalar(token: str):
         if not inner:
             return []
         return [_scalar(x) for x in _split_flow(inner)]
+    if t[0] == "{" and t[-1] == "}":
+        inner = t[1:-1].strip()
+        d = {}
+        for part in _split_flow(inner):
+            if not part.strip():
+                continue
+            k, _, v = part.partition(":")
+            d[k.strip()] = _scalar(v.strip())
+        return d
     return t
 
 
@@ -136,7 +145,11 @@ def load_yaml(text: str):
             if cur_indent < indent or not content.startswith("- "):
                 break
             item = content[2:].strip()
-            if ":" in item and not (item[0] in "\"'"):
+            if item and item[0] in "{[":
+                # inline flow mapping/sequence on the "- {..}" / "- [..]" line
+                seq.append(_scalar(item))
+                pos += 1
+            elif ":" in item and not (item[0] in "\"'"):
                 # inline mapping start on the "- key: value" line
                 lines[pos] = (cur_indent + 2, item)
                 seq.append(parse_map(cur_indent + 2))

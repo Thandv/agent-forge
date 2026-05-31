@@ -5,6 +5,25 @@ MIT license in `LICENSE` covers only this repo's original glue code.
 
 ## Vendored content (copied into `registry/`)
 
+### https://github.com/0xfurai/claude-code-subagents
+- Pinned commit: `9236d10702cdbba37eaa34515f1e1dbff8452506`
+- `agent/experts/django-expert` — MIT — `agents/django-expert.md`
+- `agent/experts/docker-expert` — MIT — `agents/docker-expert.md`
+- `agent/experts/fastapi-expert` — MIT — `agents/fastapi-expert.md`
+- `agent/experts/kafka-expert` — MIT — `agents/kafka-expert.md`
+- `agent/experts/mongodb-expert` — MIT — `agents/mongodb-expert.md`
+- `agent/experts/nestjs-expert` — MIT — `agents/nestjs-expert.md`
+- `agent/experts/nextjs-expert` — MIT — `agents/nextjs-expert.md`
+- `agent/experts/nodejs-expert` — MIT — `agents/nodejs-expert.md`
+- `agent/experts/postgres-expert` — MIT — `agents/postgres-expert.md`
+- `agent/experts/react-expert` — MIT — `agents/react-expert.md`
+- `agent/experts/react-native-expert` — MIT — `agents/react-native-expert.md`
+- `agent/experts/redis-expert` — MIT — `agents/redis-expert.md`
+- `agent/experts/spring-boot-expert` — MIT — `agents/spring-boot-expert.md`
+- `agent/experts/svelte-expert` — MIT — `agents/svelte-expert.md`
+- `agent/experts/tailwind-expert` — MIT — `agents/tailwind-expert.md`
+- `agent/experts/vue-expert` — MIT — `agents/vue-expert.md`
+
 ### https://github.com/anthropics/skills
 - Pinned commit: `da20c92503b2e8ff1cf28ca81a0df4673debdbf7`
 - `skill/algorithmic-art` — Apache-2.0 — `skills/algorithmic-art`

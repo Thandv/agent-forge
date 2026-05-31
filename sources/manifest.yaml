@@ -152,3 +152,29 @@ sources:
       - pptx
       - xlsx
       - doc-coauthoring       # no upstream LICENSE file -> license unclear
+
+  - id: furai-subagents
+    repo: https://github.com/0xfurai/claude-code-subagents
+    commit: 9236d10702cdbba37eaa34515f1e1dbff8452506
+    license: MIT
+    kind: agents
+    mode: vendor
+    # Technology/framework "expert" agents — complement the role-based agents
+    # above. Curated subset (the upstream has 138). Domain: experts.
+    agents:
+      - {src: agents/react-expert.md,        name: react-expert,        domain: experts}
+      - {src: agents/nextjs-expert.md,       name: nextjs-expert,       domain: experts}
+      - {src: agents/vue-expert.md,          name: vue-expert,          domain: experts}
+      - {src: agents/svelte-expert.md,       name: svelte-expert,       domain: experts}
+      - {src: agents/tailwind-expert.md,     name: tailwind-expert,     domain: experts}
+      - {src: agents/nodejs-expert.md,       name: nodejs-expert,       domain: experts}
+      - {src: agents/nestjs-expert.md,       name: nestjs-expert,       domain: experts}
+      - {src: agents/django-expert.md,       name: django-expert,       domain: experts}
+      - {src: agents/fastapi-expert.md,      name: fastapi-expert,      domain: experts}
+      - {src: agents/spring-boot-expert.md,  name: spring-boot-expert,  domain: experts}
+      - {src: agents/docker-expert.md,       name: docker-expert,       domain: experts}
+      - {src: agents/postgres-expert.md,     name: postgres-expert,     domain: experts}
+      - {src: agents/redis-expert.md,        name: redis-expert,        domain: experts}
+      - {src: agents/mongodb-expert.md,      name: mongodb-expert,      domain: experts}
+      - {src: agents/kafka-expert.md,        name: kafka-expert,        domain: experts}
+      - {src: agents/react-native-expert.md, name: react-native-expert, domain: experts}
