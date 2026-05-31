@@ -21,6 +21,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import shutil
+import subprocess
 import sys
 from pathlib import Path
 
@@ -31,6 +32,40 @@ from adapters import common  # noqa: E402
 GATE_FILES = [("adapters/common.py", "adapters/common.py"),
               ("scripts/scan.py", "scripts/scan.py"),
               ("scripts/validate.py", "scripts/validate.py")]
+
+CI_YAML = """\
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Security scan (blocks on any finding)
+        run: python3 scripts/scan.py registry
+      - name: Validate (schema + license + lock + re-scan)
+        run: python3 scripts/validate.py
+"""
+
+GITIGNORE = "__pycache__/\n*.pyc\n.DS_Store\n"
+
+
+def _git_init(bundle_dir: Path, name: str) -> str:
+    subprocess.run(["git", "init", "-q", str(bundle_dir)], check=True)
+    subprocess.run(["git", "-C", str(bundle_dir), "config", "user.name", "Gokul PM"], check=True)
+    subprocess.run(["git", "-C", str(bundle_dir), "config", "user.email",
+                    "gokulpm@users.noreply.github.com"], check=True)
+    subprocess.run(["git", "-C", str(bundle_dir), "add", "-A"], check=True)
+    subprocess.run(["git", "-C", str(bundle_dir), "commit", "-q", "-m",
+                    f"Initial content bundle: {name} (split from agent-forge)"], check=True)
+    return subprocess.run(["git", "-C", str(bundle_dir), "rev-parse", "--short", "HEAD"],
+                          capture_output=True, text=True).stdout.strip()
 
 
 def _bundle_for(item: common.Item) -> str:
@@ -44,6 +79,8 @@ def _sha256(p: Path) -> str:
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description="Split the registry into per-domain content bundles.")
     ap.add_argument("--out", default=str(ROOT / "split-out"))
+    ap.add_argument("--git-init", action="store_true",
+                    help="initialize each bundle as its own git repo with an initial commit")
     args = ap.parse_args(argv)
 
     out = Path(args.out)
@@ -87,10 +124,24 @@ def main(argv: list[str] | None = None) -> int:
             f"# {bundle}\n\nContent bundle split from agent-forge "
             f"({len(group)} item(s)). Self-contained: run `python3 scripts/validate.py` "
             f"to check the security + schema gate. Recombine with other bundles via "
-            f"the agent-forge builder (`builder/compose.py`).\n", encoding="utf-8")
-        print(f"  bundle {bundle:<28} {len(group)} item(s)")
+            f"the agent-forge builder (`builder/compose.py`).\n\nSee THIRD_PARTY.md for "
+            f"upstream attributions.\n", encoding="utf-8")
+        (bdir / ".github" / "workflows").mkdir(parents=True, exist_ok=True)
+        (bdir / ".github" / "workflows" / "ci.yml").write_text(CI_YAML, encoding="utf-8")
+        (bdir / ".gitignore").write_text(GITIGNORE, encoding="utf-8")
+        tp = ["# Third-Party Attributions", "",
+              f"Content in `{bundle}` retains its upstream license.", ""]
+        for it in sorted(group, key=lambda x: x.id):
+            tp.append(f"- `{it.id}` — {it.license} — {it.source_repo or 'original'}")
+        (bdir / "THIRD_PARTY.md").write_text("\n".join(tp) + "\n", encoding="utf-8")
 
-    print(f"\nsplit: {len(groups)} bundle(s) -> {out}")
+        head = ""
+        if args.git_init:
+            head = " @" + _git_init(bdir, bundle)
+        print(f"  bundle {bundle:<28} {len(group)} item(s){head}")
+
+    mode = " (git repos)" if args.git_init else ""
+    print(f"\nsplit: {len(groups)} bundle(s){mode} -> {out}")
     return 0
 
 
