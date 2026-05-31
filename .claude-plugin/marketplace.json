@@ -1,0 +1,133 @@
+{
+  "name": "agent-forge",
+  "owner": {
+    "name": "agent-forge",
+    "url": "https://github.com/Thandv/agent-forge"
+  },
+  "metadata": {
+    "description": "Security-gated, multi-tool collection of open-source AI coding agents & skills. Granular per-domain plugins.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "agentforge-backend",
+      "source": "./plugins/backend",
+      "description": "agent-forge backend agents (3).",
+      "version": "0.1.0",
+      "license": "MIT",
+      "category": "backend"
+    },
+    {
+      "name": "agentforge-data",
+      "source": "./plugins/data",
+      "description": "agent-forge data agents (4).",
+      "version": "0.1.0",
+      "license": "MIT",
+      "category": "data"
+    },
+    {
+      "name": "agentforge-devops",
+      "source": "./plugins/devops",
+      "description": "agent-forge devops agents (5).",
+      "version": "0.1.0",
+      "license": "MIT",
+      "category": "devops"
+    },
+    {
+      "name": "agentforge-docs",
+      "source": "./plugins/docs",
+      "description": "agent-forge docs agents (2).",
+      "version": "0.1.0",
+      "license": "MIT",
+      "category": "docs"
+    },
+    {
+      "name": "agentforge-experts",
+      "source": "./plugins/experts",
+      "description": "agent-forge experts agents (16).",
+      "version": "0.1.0",
+      "license": "MIT",
+      "category": "experts"
+    },
+    {
+      "name": "agentforge-frontend",
+      "source": "./plugins/frontend",
+      "description": "agent-forge frontend agents (2).",
+      "version": "0.1.0",
+      "license": "MIT",
+      "category": "frontend"
+    },
+    {
+      "name": "agentforge-languages",
+      "source": "./plugins/languages",
+      "description": "agent-forge languages agents (4).",
+      "version": "0.1.0",
+      "license": "MIT",
+      "category": "languages"
+    },
+    {
+      "name": "agentforge-meta",
+      "source": "./plugins/meta",
+      "description": "agent-forge meta agents (5).",
+      "version": "0.1.0",
+      "license": "MIT",
+      "category": "meta"
+    },
+    {
+      "name": "agentforge-optimization",
+      "source": "./plugins/optimization",
+      "description": "agent-forge optimization agents (3).",
+      "version": "0.1.0",
+      "license": "MIT",
+      "category": "optimization"
+    },
+    {
+      "name": "agentforge-product",
+      "source": "./plugins/product",
+      "description": "agent-forge product agents (5).",
+      "version": "0.1.0",
+      "license": "MIT",
+      "category": "product"
+    },
+    {
+      "name": "agentforge-research",
+      "source": "./plugins/research",
+      "description": "agent-forge research agents (4).",
+      "version": "0.1.0",
+      "license": "MIT",
+      "category": "research"
+    },
+    {
+      "name": "agentforge-review",
+      "source": "./plugins/review",
+      "description": "agent-forge review agents (6).",
+      "version": "0.1.0",
+      "license": "MIT",
+      "category": "review"
+    },
+    {
+      "name": "agentforge-security",
+      "source": "./plugins/security",
+      "description": "agent-forge security agents (3).",
+      "version": "0.1.0",
+      "license": "MIT",
+      "category": "security"
+    },
+    {
+      "name": "agentforge-specialized",
+      "source": "./plugins/specialized",
+      "description": "agent-forge specialized agents (5).",
+      "version": "0.1.0",
+      "license": "MIT",
+      "category": "specialized"
+    },
+    {
+      "name": "agentforge-skills",
+      "source": "./plugins/skills",
+      "description": "agent-forge skills (21).",
+      "version": "0.1.0",
+      "license": "Apache-2.0",
+      "category": "skills"
+    }
+  ]
+}

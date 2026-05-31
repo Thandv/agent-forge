@@ -34,7 +34,17 @@ def _agent_md(it: common.Item) -> str:
 
 
 def emit(items: list[common.Item], out_root: Path) -> dict:
-    root = out_root / TOOL
+    """Standard adapter entrypoint: emit under out_root/claude-plugin."""
+    r = emit_to(items, out_root / TOOL)
+    return {"tool": TOOL, **r, "root": str(out_root / TOOL)}
+
+
+def emit_to(items: list[common.Item], root: Path) -> dict:
+    """Emit a Claude Code plugin marketplace directly into `root`.
+
+    Used both for dist/claude-plugin (via emit) and for the committed root
+    marketplace at the repo root (via scripts/build_marketplace.py).
+    """
     plugins_dir = root / "plugins"
     plugins_dir.mkdir(parents=True, exist_ok=True)
 
@@ -92,4 +102,4 @@ def emit(items: list[common.Item], out_root: Path) -> dict:
         common.json.dumps(marketplace, indent=2) + "\n", encoding="utf-8")
 
     n_a = sum(len(v) for v in by_domain.values())
-    return {"tool": TOOL, "agents": n_a, "skills": len(skills), "root": str(root)}
+    return {"agents": n_a, "skills": len(skills)}

@@ -67,17 +67,21 @@ Use `--copy` instead of symlinks for independent copies, and `--force` to
 overwrite existing real files. There's also a `Makefile` (`make build`,
 `make install`, `make test`, …).
 
-### Install as a Claude Code plugin marketplace
+### Install as a Claude Code plugin marketplace (one command, no build)
 
-`scripts/build.sh` also emits a granular, per-domain **plugin marketplace** under
-`dist/claude-plugin/`. Add it and install just the domains you want (keeps your
-context lean):
+A granular, per-domain **plugin marketplace** is committed at the repo root
+(`.claude-plugin/marketplace.json` + `plugins/`), so you can add it straight from
+GitHub and install just the domains you want (keeps context lean):
 
 ```
-/plugin marketplace add /abs/path/to/agent-forge/dist/claude-plugin
+/plugin marketplace add Thandv/agent-forge
 /plugin install agentforge-optimization@agent-forge
 /plugin install agentforge-security@agent-forge
 ```
+
+The root marketplace is generated from the registry by
+`scripts/build_marketplace.py`; CI fails if it drifts out of sync. (A build-time
+copy is also emitted under `dist/claude-plugin/` by `scripts/build.sh`.)
 
 ## How content is selected (the gate)
 

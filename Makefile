@@ -1,5 +1,5 @@
 # agent-forge — convenience targets (thin wrappers over scripts/).
-.PHONY: help sync validate build install dry-run test split compose clean
+.PHONY: help sync validate build marketplace install dry-run test split compose clean
 
 help:
 	@echo "agent-forge targets:"
@@ -21,6 +21,9 @@ validate:
 
 build:
 	bash scripts/build.sh --tool $(or $(TOOL),all)
+
+marketplace:
+	python3 scripts/build_marketplace.py
 
 dry-run:
 	bash scripts/install.sh --tool claude-code --dry-run

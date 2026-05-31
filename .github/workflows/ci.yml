@@ -24,5 +24,8 @@ jobs:
       - name: Build all tool images
         run: python3 scripts/build.py --tool all
 
+      - name: Root marketplace is in sync with the registry
+        run: python3 scripts/build_marketplace.py --check
+
       - name: Test suite
         run: bash tests/run_tests.sh
