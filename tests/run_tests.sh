@@ -36,9 +36,11 @@ rm -rf "$EVIL"
 echo "== build: all tools must render =="
 python3 scripts/build.py --tool all --out /tmp/af-test-dist >/dev/null 2>&1
 expect_exit 0 $? "build --tool all"
-for t in claude-code codex cursor gemini; do
+for t in claude-code claude-plugin codex cursor gemini; do
   if [ -d "/tmp/af-test-dist/$t" ]; then pass "dist/$t exists"; else fail "dist/$t missing"; fi
 done
+python3 -c "import json; json.load(open('/tmp/af-test-dist/claude-plugin/.claude-plugin/marketplace.json'))" 2>/dev/null
+expect_exit 0 $? "marketplace.json is valid JSON"
 
 echo "== install: path traversal must be refused =="
 python3 - <<'PY'

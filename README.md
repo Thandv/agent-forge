@@ -1,5 +1,7 @@
 # agent-forge
 
+[![ci](https://github.com/Thandv/agent-forge/actions/workflows/ci.yml/badge.svg)](https://github.com/Thandv/agent-forge/actions/workflows/ci.yml)
+
 A unified, **security-gated**, **multi-tool** collection of the best open-source
 AI coding **agents** and **skills** — vendored from top-rated repositories, kept
 in one tool-agnostic source of truth, and rendered into native formats you can
@@ -60,7 +62,20 @@ scripts/install.sh --tool gemini                 # -> ~/.gemini (+ /commands)
 ```
 
 Use `--copy` instead of symlinks for independent copies, and `--force` to
-overwrite existing real files.
+overwrite existing real files. There's also a `Makefile` (`make build`,
+`make install`, `make test`, …).
+
+### Install as a Claude Code plugin marketplace
+
+`scripts/build.sh` also emits a granular, per-domain **plugin marketplace** under
+`dist/claude-plugin/`. Add it and install just the domains you want (keeps your
+context lean):
+
+```
+/plugin marketplace add /abs/path/to/agent-forge/dist/claude-plugin
+/plugin install agentforge-optimization@agent-forge
+/plugin install agentforge-security@agent-forge
+```
 
 ## How content is selected (the gate)
 

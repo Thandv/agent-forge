@@ -17,10 +17,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from adapters import common, claude_code, codex, cursor, gemini  # noqa: E402
+from adapters import common, claude_code, claude_plugin, codex, cursor, gemini  # noqa: E402
 
 ADAPTERS = {
     "claude-code": claude_code,
+    "claude-plugin": claude_plugin,
     "codex": codex,
     "cursor": cursor,
     "gemini": gemini,
