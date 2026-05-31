@@ -1,0 +1,12 @@
+# Build output (regenerated from registry/ by scripts/build.sh)
+/dist/
+
+# Upstream clone cache (regenerated from sources/manifest.yaml by scripts/sync.sh)
+/.cache/
+
+# OS / editor noise
+.DS_Store
+*.swp
+__pycache__/
+*.pyc
+.venv/

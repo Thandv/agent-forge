@@ -1,0 +1,551 @@
+generated_from: sources/manifest.yaml
+counts:
+  vendored: 40
+  original: 3
+  reference: 8
+  submodule: 0
+items:
+  - id: agent/backend/backend-architect
+    kind: agent
+    name: backend-architect
+    domain: backend
+    status: vendored
+    license: MIT
+    description: "Expert backend architect specializing in scalable API design, microservices architecture, and distributed systems. Masters REST/GraphQL/gRPC APIs, event-driven "
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/backend-development/agents/backend-architect.md
+  - id: agent/backend/performance-engineer
+    kind: agent
+    name: performance-engineer
+    domain: backend
+    status: vendored
+    license: MIT
+    description: "Expert performance engineer specializing in modern observability, application optimization, and scalable system performance. Masters OpenTelemetry, distributed "
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/application-performance/agents/performance-engineer.md
+  - id: agent/backend/sql-pro
+    kind: agent
+    name: sql-pro
+    domain: backend
+    status: vendored
+    license: MIT
+    description: Master modern SQL with cloud-native databases, OLTP/OLAP optimization, and advanced query techniques. Expert in performance tuning, data modeling, and hybrid an
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/database-design/agents/sql-pro.md
+  - id: agent/data/ai-engineer
+    kind: agent
+    name: ai-engineer
+    domain: data
+    status: vendored
+    license: MIT
+    description: Build production-ready LLM applications, advanced RAG systems, and intelligent agents. Implements vector search, multimodal AI, agent orchestration, and enterpr
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/llm-application-dev/agents/ai-engineer.md
+  - id: agent/data/data-engineer
+    kind: agent
+    name: data-engineer
+    domain: data
+    status: vendored
+    license: MIT
+    description: Build scalable data pipelines, modern data warehouses, and real-time streaming architectures. Implements Apache Spark, dbt, Airflow, and cloud-native data platf
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/data-engineering/agents/data-engineer.md
+  - id: agent/data/data-scientist
+    kind: agent
+    name: data-scientist
+    domain: data
+    status: vendored
+    license: MIT
+    description: Expert data scientist for advanced analytics, machine learning, and statistical modeling. Handles complex data analysis, predictive modeling, and business intel
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/machine-learning-ops/agents/data-scientist.md
+  - id: agent/data/ml-engineer
+    kind: agent
+    name: ml-engineer
+    domain: data
+    status: vendored
+    license: MIT
+    description: "Build production ML systems with PyTorch 2.x, TensorFlow, and modern ML frameworks. Implements model serving, feature engineering, A/B testing, and monitoring. "
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/machine-learning-ops/agents/ml-engineer.md
+  - id: agent/devops/cloud-architect
+    kind: agent
+    name: cloud-architect
+    domain: devops
+    status: vendored
+    license: MIT
+    description: Expert cloud architect specializing in AWS/Azure/GCP/OCI multi-cloud infrastructure design, advanced IaC (Terraform/OpenTofu/CDK), FinOps cost optimization, and
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/cloud-infrastructure/agents/cloud-architect.md
+  - id: agent/devops/deployment-engineer
+    kind: agent
+    name: deployment-engineer
+    domain: devops
+    status: vendored
+    license: MIT
+    description: Expert deployment engineer specializing in modern CI/CD pipelines, GitOps workflows, and advanced deployment automation. Masters GitHub Actions, ArgoCD/Flux, pr
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/cicd-automation/agents/deployment-engineer.md
+  - id: agent/devops/devops-troubleshooter
+    kind: agent
+    name: devops-troubleshooter
+    domain: devops
+    status: vendored
+    license: MIT
+    description: Expert DevOps troubleshooter specializing in rapid incident response, advanced debugging, and modern observability. Masters log analysis, distributed tracing, K
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/cicd-automation/agents/devops-troubleshooter.md
+  - id: agent/devops/kubernetes-architect
+    kind: agent
+    name: kubernetes-architect
+    domain: devops
+    status: vendored
+    license: MIT
+    description: Expert Kubernetes architect specializing in cloud-native infrastructure, advanced GitOps workflows (ArgoCD/Flux), and enterprise container orchestration. Master
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/kubernetes-operations/agents/kubernetes-architect.md
+  - id: agent/devops/terraform-specialist
+    kind: agent
+    name: terraform-specialist
+    domain: devops
+    status: vendored
+    license: MIT
+    description: Expert Terraform/OpenTofu specialist mastering advanced IaC automation, state management, and enterprise infrastructure patterns. Handles complex module design,
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/deployment-strategies/agents/terraform-specialist.md
+  - id: agent/docs/api-documenter
+    kind: agent
+    name: api-documenter
+    domain: docs
+    status: vendored
+    license: MIT
+    description: Master API documentation with OpenAPI 3.1, AI-powered tools, and modern developer experience practices. Create interactive docs, generate SDKs, and build compre
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/documentation-generation/agents/api-documenter.md
+  - id: agent/docs/docs-architect
+    kind: agent
+    name: docs-architect
+    domain: docs
+    status: vendored
+    license: MIT
+    description: Creates comprehensive technical documentation from existing codebases. Analyzes architecture, design patterns, and implementation details to produce long-form t
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/documentation-generation/agents/docs-architect.md
+  - id: agent/frontend/frontend-developer
+    kind: agent
+    name: frontend-developer
+    domain: frontend
+    status: vendored
+    license: MIT
+    description: Build React components, implement responsive layouts, and handle client-side state management. Masters React 19, Next.js 15, and modern frontend architecture. O
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/application-performance/agents/frontend-developer.md
+  - id: agent/frontend/ui-ux-designer
+    kind: agent
+    name: ui-ux-designer
+    domain: frontend
+    status: vendored
+    license: MIT
+    description: Create interface designs, wireframes, and design systems. Masters user research, accessibility standards, and modern design tools. Specializes in design tokens,
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/multi-platform-apps/agents/ui-ux-designer.md
+  - id: agent/languages/golang-pro
+    kind: agent
+    name: golang-pro
+    domain: languages
+    status: vendored
+    license: MIT
+    description: Master Go 1.21+ with modern patterns, advanced concurrency, performance optimization, and production-ready microservices. Expert in the latest Go ecosystem incl
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/systems-programming/agents/golang-pro.md
+  - id: agent/languages/python-pro
+    kind: agent
+    name: python-pro
+    domain: languages
+    status: vendored
+    license: MIT
+    description: Master Python 3.12+ with modern features, async programming, performance optimization, and production-ready practices. Expert in the latest Python ecosystem inc
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/python-development/agents/python-pro.md
+  - id: agent/languages/rust-pro
+    kind: agent
+    name: rust-pro
+    domain: languages
+    status: vendored
+    license: MIT
+    description: Master Rust 1.75+ with modern async patterns, advanced type system features, and production-ready systems programming. Expert in the latest Rust ecosystem inclu
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/systems-programming/agents/rust-pro.md
+  - id: agent/languages/typescript-pro
+    kind: agent
+    name: typescript-pro
+    domain: languages
+    status: vendored
+    license: MIT
+    description: Master TypeScript with advanced types, generics, and strict type safety. Handles complex type systems, decorators, and enterprise-grade patterns. Use PROACTIVEL
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/javascript-typescript/agents/typescript-pro.md
+  - id: agent/optimization/context-manager
+    kind: agent
+    name: context-manager
+    domain: optimization
+    status: vendored
+    license: MIT
+    description: Elite AI context engineering specialist mastering dynamic context management, vector databases, knowledge graphs, and intelligent memory systems. Orchestrates c
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/context-management/agents/context-manager.md
+  - id: agent/optimization/prompt-engineer
+    kind: agent
+    name: prompt-engineer
+    domain: optimization
+    status: vendored
+    license: MIT
+    description: Expert prompt engineer specializing in advanced prompting techniques, LLM optimization, and AI system design. Masters chain-of-thought, constitutional AI, and p
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/llm-application-dev/agents/prompt-engineer.md
+  - id: agent/optimization/token-optimizer
+    kind: agent
+    name: token-optimizer
+    domain: optimization
+    status: original
+    license: MIT
+    description: Token- and context-efficiency specialist. Use PROACTIVELY before and during long sessions, large refactors, or repo-wide tasks to minimize token spend and conte
+    source:
+      repo: original
+      commit: original
+      path: registry/agents/optimization/token-optimizer/agent.md
+  - id: agent/review/architect-review
+    kind: agent
+    name: architect-review
+    domain: review
+    status: vendored
+    license: MIT
+    description: Master software architect specializing in modern architecture patterns, clean architecture, microservices, event-driven systems, and DDD. Reviews system designs
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/comprehensive-review/agents/architect-review.md
+  - id: agent/review/code-reviewer
+    kind: agent
+    name: code-reviewer
+    domain: review
+    status: vendored
+    license: MIT
+    description: Elite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance optimization, and production reliability. Master
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/code-documentation/agents/code-reviewer.md
+  - id: agent/review/debugger
+    kind: agent
+    name: debugger
+    domain: review
+    status: vendored
+    license: MIT
+    description: Debugging specialist for errors, test failures, and unexpected behavior. Use proactively when encountering any issues.
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/debugging-toolkit/agents/debugger.md
+  - id: agent/review/error-detective
+    kind: agent
+    name: error-detective
+    domain: review
+    status: vendored
+    license: MIT
+    description: Search logs and codebases for error patterns, stack traces, and anomalies. Correlates errors across systems and identifies root causes. Use PROACTIVELY when deb
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/distributed-debugging/agents/error-detective.md
+  - id: agent/review/tdd-orchestrator
+    kind: agent
+    name: tdd-orchestrator
+    domain: review
+    status: vendored
+    license: MIT
+    description: Master TDD orchestrator specializing in red-green-refactor discipline, multi-agent workflow coordination, and comprehensive test-driven development practices. E
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/tdd-workflows/agents/tdd-orchestrator.md
+  - id: agent/review/test-automator
+    kind: agent
+    name: test-automator
+    domain: review
+    status: vendored
+    license: MIT
+    description: Create comprehensive test suites including unit, integration, and E2E tests. Supports TDD/BDD workflows. Use for test creation during feature development.
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/backend-development/agents/test-automator.md
+  - id: agent/security/backend-security-coder
+    kind: agent
+    name: backend-security-coder
+    domain: security
+    status: vendored
+    license: MIT
+    description: Expert in secure backend coding practices specializing in input validation, authentication, and API security. Use PROACTIVELY for backend security implementatio
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/backend-api-security/agents/backend-security-coder.md
+  - id: agent/security/security-auditor
+    kind: agent
+    name: security-auditor
+    domain: security
+    status: vendored
+    license: MIT
+    description: Expert security auditor specializing in DevSecOps, comprehensive cybersecurity, and compliance frameworks. Masters vulnerability assessment, threat modeling, se
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/security-compliance/agents/security-auditor.md
+  - id: agent/security/threat-modeling-expert
+    kind: agent
+    name: threat-modeling-expert
+    domain: security
+    status: vendored
+    license: MIT
+    description: Expert in threat modeling methodologies, security architecture review, and risk assessment. Masters STRIDE, PASTA, attack trees, and security requirement extrac
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/security-scanning/agents/threat-modeling-expert.md
+  - id: skill/algorithmic-art
+    kind: skill
+    name: algorithmic-art
+    status: vendored
+    license: Apache-2.0
+    description: Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generati
+    source:
+      repo: "https://github.com/anthropics/skills"
+      commit: da20c92503b2e8ff1cf28ca81a0df4673debdbf7
+      path: skills/algorithmic-art
+  - id: skill/brand-guidelines
+    kind: skill
+    name: brand-guidelines
+    status: vendored
+    license: Apache-2.0
+    description: "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand color"
+    source:
+      repo: "https://github.com/anthropics/skills"
+      commit: da20c92503b2e8ff1cf28ca81a0df4673debdbf7
+      path: skills/brand-guidelines
+  - id: skill/canvas-design
+    kind: skill
+    name: canvas-design
+    status: vendored
+    license: Apache-2.0
+    description: Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, d
+    source:
+      repo: "https://github.com/anthropics/skills"
+      commit: da20c92503b2e8ff1cf28ca81a0df4673debdbf7
+      path: skills/canvas-design
+  - id: skill/claude-api
+    kind: skill
+    name: claude-api
+    status: reference
+    license: Apache-2.0
+    reason: "30 blocking finding(s) [exfil:exfil.secret_env_read, injection:inject.disregard] e.g. csharp/claude-api.md:8"
+    source:
+      repo: "https://github.com/anthropics/skills"
+      commit: da20c92503b2e8ff1cf28ca81a0df4673debdbf7
+      path: skills/claude-api
+  - id: skill/context-compaction
+    kind: skill
+    name: context-compaction
+    domain: ""
+    status: original
+    license: MIT
+    description: "Keep a long session lean: when and how to checkpoint and compact context so work continues without hitting the limit or paying for stale history. Use during lon"
+    source:
+      repo: original
+      commit: original
+      path: registry/skills/context-compaction
+  - id: skill/doc-coauthoring
+    kind: skill
+    name: doc-coauthoring
+    status: reference
+    license: UNKNOWN
+    reason: forced reference (proprietary/unclear license)
+    source:
+      repo: "https://github.com/anthropics/skills"
+      commit: da20c92503b2e8ff1cf28ca81a0df4673debdbf7
+      path: skills/doc-coauthoring
+  - id: skill/docx
+    kind: skill
+    name: docx
+    status: reference
+    license: Proprietary
+    reason: forced reference (proprietary/unclear license)
+    source:
+      repo: "https://github.com/anthropics/skills"
+      commit: da20c92503b2e8ff1cf28ca81a0df4673debdbf7
+      path: skills/docx
+  - id: skill/frontend-design
+    kind: skill
+    name: frontend-design
+    status: vendored
+    license: Apache-2.0
+    description: "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, "
+    source:
+      repo: "https://github.com/anthropics/skills"
+      commit: da20c92503b2e8ff1cf28ca81a0df4673debdbf7
+      path: skills/frontend-design
+  - id: skill/internal-comms
+    kind: skill
+    name: internal-comms
+    status: vendored
+    license: Apache-2.0
+    description: "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever "
+    source:
+      repo: "https://github.com/anthropics/skills"
+      commit: da20c92503b2e8ff1cf28ca81a0df4673debdbf7
+      path: skills/internal-comms
+  - id: skill/mcp-builder
+    kind: skill
+    name: mcp-builder
+    status: reference
+    license: Apache-2.0
+    reason: "2 blocking finding(s) [exfil:exfil.secret_env_read] e.g. reference/node_mcp_server.md:121"
+    source:
+      repo: "https://github.com/anthropics/skills"
+      commit: da20c92503b2e8ff1cf28ca81a0df4673debdbf7
+      path: skills/mcp-builder
+  - id: skill/pdf
+    kind: skill
+    name: pdf
+    status: reference
+    license: Proprietary
+    reason: forced reference (proprietary/unclear license)
+    source:
+      repo: "https://github.com/anthropics/skills"
+      commit: da20c92503b2e8ff1cf28ca81a0df4673debdbf7
+      path: skills/pdf
+  - id: skill/pptx
+    kind: skill
+    name: pptx
+    status: reference
+    license: Proprietary
+    reason: forced reference (proprietary/unclear license)
+    source:
+      repo: "https://github.com/anthropics/skills"
+      commit: da20c92503b2e8ff1cf28ca81a0df4673debdbf7
+      path: skills/pptx
+  - id: skill/skill-creator
+    kind: skill
+    name: skill-creator
+    status: vendored
+    license: Apache-2.0
+    description: Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an e
+    source:
+      repo: "https://github.com/anthropics/skills"
+      commit: da20c92503b2e8ff1cf28ca81a0df4673debdbf7
+      path: skills/skill-creator
+  - id: skill/slack-gif-creator
+    kind: skill
+    name: slack-gif-creator
+    status: vendored
+    license: Apache-2.0
+    description: Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request a
+    source:
+      repo: "https://github.com/anthropics/skills"
+      commit: da20c92503b2e8ff1cf28ca81a0df4673debdbf7
+      path: skills/slack-gif-creator
+  - id: skill/theme-factory
+    kind: skill
+    name: theme-factory
+    status: vendored
+    license: Apache-2.0
+    description: Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fo
+    source:
+      repo: "https://github.com/anthropics/skills"
+      commit: da20c92503b2e8ff1cf28ca81a0df4673debdbf7
+      path: skills/theme-factory
+  - id: skill/token-budget
+    kind: skill
+    name: token-budget
+    domain: ""
+    status: original
+    license: MIT
+    description: "Estimate the token cost of files or directories BEFORE reading them, so you spend context only where it pays off. Use when about to read many/large files, when "
+    source:
+      repo: original
+      commit: original
+      path: registry/skills/token-budget
+  - id: skill/web-artifacts-builder
+    kind: skill
+    name: web-artifacts-builder
+    status: vendored
+    license: Apache-2.0
+    description: Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for
+    source:
+      repo: "https://github.com/anthropics/skills"
+      commit: da20c92503b2e8ff1cf28ca81a0df4673debdbf7
+      path: skills/web-artifacts-builder
+  - id: skill/webapp-testing
+    kind: skill
+    name: webapp-testing
+    status: reference
+    license: Apache-2.0
+    reason: "1 blocking finding(s) [rce:rce.shell_true] e.g. scripts/with_server.py:69"
+    source:
+      repo: "https://github.com/anthropics/skills"
+      commit: da20c92503b2e8ff1cf28ca81a0df4673debdbf7
+      path: skills/webapp-testing
+  - id: skill/xlsx
+    kind: skill
+    name: xlsx
+    status: reference
+    license: Proprietary
+    reason: forced reference (proprietary/unclear license)
+    source:
+      repo: "https://github.com/anthropics/skills"
+      commit: da20c92503b2e8ff1cf28ca81a0df4673debdbf7
+      path: skills/xlsx

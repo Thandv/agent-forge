@@ -1,0 +1,63 @@
+# Third-Party Attributions
+
+Every item vendored into `registry/` retains its upstream license. The
+MIT license in `LICENSE` covers only this repo's original glue code.
+
+## Vendored content (copied into `registry/`)
+
+### https://github.com/anthropics/skills
+- Pinned commit: `da20c92503b2e8ff1cf28ca81a0df4673debdbf7`
+- `skill/algorithmic-art` — Apache-2.0 — `skills/algorithmic-art`
+- `skill/brand-guidelines` — Apache-2.0 — `skills/brand-guidelines`
+- `skill/canvas-design` — Apache-2.0 — `skills/canvas-design`
+- `skill/frontend-design` — Apache-2.0 — `skills/frontend-design`
+- `skill/internal-comms` — Apache-2.0 — `skills/internal-comms`
+- `skill/skill-creator` — Apache-2.0 — `skills/skill-creator`
+- `skill/slack-gif-creator` — Apache-2.0 — `skills/slack-gif-creator`
+- `skill/theme-factory` — Apache-2.0 — `skills/theme-factory`
+- `skill/web-artifacts-builder` — Apache-2.0 — `skills/web-artifacts-builder`
+
+### https://github.com/wshobson/agents
+- Pinned commit: `0818067b4ecad18c234b2ae427cc44f2053792d4`
+- `agent/backend/backend-architect` — MIT — `plugins/backend-development/agents/backend-architect.md`
+- `agent/backend/performance-engineer` — MIT — `plugins/application-performance/agents/performance-engineer.md`
+- `agent/backend/sql-pro` — MIT — `plugins/database-design/agents/sql-pro.md`
+- `agent/data/ai-engineer` — MIT — `plugins/llm-application-dev/agents/ai-engineer.md`
+- `agent/data/data-engineer` — MIT — `plugins/data-engineering/agents/data-engineer.md`
+- `agent/data/data-scientist` — MIT — `plugins/machine-learning-ops/agents/data-scientist.md`
+- `agent/data/ml-engineer` — MIT — `plugins/machine-learning-ops/agents/ml-engineer.md`
+- `agent/devops/cloud-architect` — MIT — `plugins/cloud-infrastructure/agents/cloud-architect.md`
+- `agent/devops/deployment-engineer` — MIT — `plugins/cicd-automation/agents/deployment-engineer.md`
+- `agent/devops/devops-troubleshooter` — MIT — `plugins/cicd-automation/agents/devops-troubleshooter.md`
+- `agent/devops/kubernetes-architect` — MIT — `plugins/kubernetes-operations/agents/kubernetes-architect.md`
+- `agent/devops/terraform-specialist` — MIT — `plugins/deployment-strategies/agents/terraform-specialist.md`
+- `agent/docs/api-documenter` — MIT — `plugins/documentation-generation/agents/api-documenter.md`
+- `agent/docs/docs-architect` — MIT — `plugins/documentation-generation/agents/docs-architect.md`
+- `agent/frontend/frontend-developer` — MIT — `plugins/application-performance/agents/frontend-developer.md`
+- `agent/frontend/ui-ux-designer` — MIT — `plugins/multi-platform-apps/agents/ui-ux-designer.md`
+- `agent/languages/golang-pro` — MIT — `plugins/systems-programming/agents/golang-pro.md`
+- `agent/languages/python-pro` — MIT — `plugins/python-development/agents/python-pro.md`
+- `agent/languages/rust-pro` — MIT — `plugins/systems-programming/agents/rust-pro.md`
+- `agent/languages/typescript-pro` — MIT — `plugins/javascript-typescript/agents/typescript-pro.md`
+- `agent/optimization/context-manager` — MIT — `plugins/context-management/agents/context-manager.md`
+- `agent/optimization/prompt-engineer` — MIT — `plugins/llm-application-dev/agents/prompt-engineer.md`
+- `agent/review/architect-review` — MIT — `plugins/comprehensive-review/agents/architect-review.md`
+- `agent/review/code-reviewer` — MIT — `plugins/code-documentation/agents/code-reviewer.md`
+- `agent/review/debugger` — MIT — `plugins/debugging-toolkit/agents/debugger.md`
+- `agent/review/error-detective` — MIT — `plugins/distributed-debugging/agents/error-detective.md`
+- `agent/review/tdd-orchestrator` — MIT — `plugins/tdd-workflows/agents/tdd-orchestrator.md`
+- `agent/review/test-automator` — MIT — `plugins/backend-development/agents/test-automator.md`
+- `agent/security/backend-security-coder` — MIT — `plugins/backend-api-security/agents/backend-security-coder.md`
+- `agent/security/security-auditor` — MIT — `plugins/security-compliance/agents/security-auditor.md`
+- `agent/security/threat-modeling-expert` — MIT — `plugins/security-scanning/agents/threat-modeling-expert.md`
+
+## Referenced content (NOT copied — see upstream for license & install)
+
+- `skill/claude-api` — Apache-2.0 — https://github.com/anthropics/skills (`skills/claude-api`) — _30 blocking finding(s) [exfil:exfil.secret_env_read, injection:inject.disregard] e.g. csharp/claude-api.md:8_
+- `skill/doc-coauthoring` — UNKNOWN — https://github.com/anthropics/skills (`skills/doc-coauthoring`) — _forced reference (proprietary/unclear license)_
+- `skill/docx` — Proprietary — https://github.com/anthropics/skills (`skills/docx`) — _forced reference (proprietary/unclear license)_
+- `skill/mcp-builder` — Apache-2.0 — https://github.com/anthropics/skills (`skills/mcp-builder`) — _2 blocking finding(s) [exfil:exfil.secret_env_read] e.g. reference/node_mcp_server.md:121_
+- `skill/pdf` — Proprietary — https://github.com/anthropics/skills (`skills/pdf`) — _forced reference (proprietary/unclear license)_
+- `skill/pptx` — Proprietary — https://github.com/anthropics/skills (`skills/pptx`) — _forced reference (proprietary/unclear license)_
+- `skill/webapp-testing` — Apache-2.0 — https://github.com/anthropics/skills (`skills/webapp-testing`) — _1 blocking finding(s) [rce:rce.shell_true] e.g. scripts/with_server.py:69_
+- `skill/xlsx` — Proprietary — https://github.com/anthropics/skills (`skills/xlsx`) — _forced reference (proprietary/unclear license)_

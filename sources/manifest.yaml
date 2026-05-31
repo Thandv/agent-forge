@@ -1,0 +1,154 @@
+# agent-forge upstream manifest
+#
+# Every source is pinned to an exact commit SHA. scripts/sync.py clones each
+# source at that SHA, runs scripts/scan.py over every candidate file, and:
+#   * vendors (copies into registry/) items that are BOTH permissively licensed
+#     AND pass the scanner with zero blocking findings;
+#   * records everything else as a "reference" entry in catalog.yaml (with the
+#     reason) — never silently dropped.
+#
+# mode:
+#   vendor    -> copy items into the registry (still subject to scan+license gate)
+#   auto      -> vendor if clean+permissive, else reference
+#   reference -> never copied; cataloged as a pointer to upstream
+#   submodule -> registered as a git submodule under sources/vendor/ (for large
+#                or fast-moving upstreams); supported by sync.py, unused by the
+#                current seed because both upstreams are cleanly vendorable.
+
+sources:
+  - id: wshobson-agents
+    repo: https://github.com/wshobson/agents
+    commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+    license: MIT
+    kind: agents
+    mode: vendor
+    agents:
+      # --- optimization (token / context efficiency) ---
+      - src: plugins/context-management/agents/context-manager.md
+        name: context-manager
+        domain: optimization
+      - src: plugins/llm-application-dev/agents/prompt-engineer.md
+        name: prompt-engineer
+        domain: optimization
+      # --- backend ---
+      - src: plugins/backend-development/agents/backend-architect.md
+        name: backend-architect
+        domain: backend
+      - src: plugins/database-design/agents/sql-pro.md
+        name: sql-pro
+        domain: backend
+      - src: plugins/application-performance/agents/performance-engineer.md
+        name: performance-engineer
+        domain: backend
+      # --- languages ---
+      - src: plugins/python-development/agents/python-pro.md
+        name: python-pro
+        domain: languages
+      - src: plugins/systems-programming/agents/golang-pro.md
+        name: golang-pro
+        domain: languages
+      - src: plugins/systems-programming/agents/rust-pro.md
+        name: rust-pro
+        domain: languages
+      - src: plugins/javascript-typescript/agents/typescript-pro.md
+        name: typescript-pro
+        domain: languages
+      # --- frontend ---
+      - src: plugins/application-performance/agents/frontend-developer.md
+        name: frontend-developer
+        domain: frontend
+      - src: plugins/multi-platform-apps/agents/ui-ux-designer.md
+        name: ui-ux-designer
+        domain: frontend
+      # --- review / quality ---
+      - src: plugins/code-documentation/agents/code-reviewer.md
+        name: code-reviewer
+        domain: review
+      - src: plugins/comprehensive-review/agents/architect-review.md
+        name: architect-review
+        domain: review
+      - src: plugins/backend-development/agents/test-automator.md
+        name: test-automator
+        domain: review
+      - src: plugins/tdd-workflows/agents/tdd-orchestrator.md
+        name: tdd-orchestrator
+        domain: review
+      - src: plugins/debugging-toolkit/agents/debugger.md
+        name: debugger
+        domain: review
+      - src: plugins/distributed-debugging/agents/error-detective.md
+        name: error-detective
+        domain: review
+      # --- security ---
+      - src: plugins/security-compliance/agents/security-auditor.md
+        name: security-auditor
+        domain: security
+      - src: plugins/backend-api-security/agents/backend-security-coder.md
+        name: backend-security-coder
+        domain: security
+      - src: plugins/security-scanning/agents/threat-modeling-expert.md
+        name: threat-modeling-expert
+        domain: security
+      # --- devops / cloud ---
+      - src: plugins/cicd-automation/agents/devops-troubleshooter.md
+        name: devops-troubleshooter
+        domain: devops
+      - src: plugins/cicd-automation/agents/deployment-engineer.md
+        name: deployment-engineer
+        domain: devops
+      - src: plugins/kubernetes-operations/agents/kubernetes-architect.md
+        name: kubernetes-architect
+        domain: devops
+      - src: plugins/deployment-strategies/agents/terraform-specialist.md
+        name: terraform-specialist
+        domain: devops
+      - src: plugins/cloud-infrastructure/agents/cloud-architect.md
+        name: cloud-architect
+        domain: devops
+      # --- data / ml ---
+      - src: plugins/data-engineering/agents/data-engineer.md
+        name: data-engineer
+        domain: data
+      - src: plugins/machine-learning-ops/agents/data-scientist.md
+        name: data-scientist
+        domain: data
+      - src: plugins/machine-learning-ops/agents/ml-engineer.md
+        name: ml-engineer
+        domain: data
+      - src: plugins/llm-application-dev/agents/ai-engineer.md
+        name: ai-engineer
+        domain: data
+      # --- docs ---
+      - src: plugins/documentation-generation/agents/docs-architect.md
+        name: docs-architect
+        domain: docs
+      - src: plugins/documentation-generation/agents/api-documenter.md
+        name: api-documenter
+        domain: docs
+
+  - id: anthropics-skills
+    repo: https://github.com/anthropics/skills
+    commit: da20c92503b2e8ff1cf28ca81a0df4673debdbf7
+    kind: skills
+    mode: auto                 # license + scan decide vendor vs reference per skill
+    skills_dir: skills
+    skills:
+      - algorithmic-art
+      - brand-guidelines
+      - canvas-design
+      - frontend-design
+      - internal-comms
+      - skill-creator
+      - slack-gif-creator
+      - theme-factory
+      - web-artifacts-builder
+      - claude-api            # expected REFERENCE (code samples read API keys)
+      - mcp-builder           # expected REFERENCE (MCP server samples read secrets)
+      - webapp-testing        # expected REFERENCE (uses subprocess shell=True)
+    # Proprietary upstream license -> always reference, never vendored:
+    reference:
+      - docx
+      - pdf
+      - pptx
+      - xlsx
+      - doc-coauthoring       # no upstream LICENSE file -> license unclear
