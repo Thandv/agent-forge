@@ -122,6 +122,14 @@
       "category": "specialized"
     },
     {
+      "name": "agentforge-utility",
+      "source": "./plugins/utility",
+      "description": "agent-forge utility agents (14).",
+      "version": "0.1.0",
+      "license": "MIT",
+      "category": "utility"
+    },
+    {
       "name": "agentforge-skills",
       "source": "./plugins/skills",
       "description": "agent-forge skills (21).",

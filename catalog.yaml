@@ -1,6 +1,6 @@
 generated_from: sources/manifest.yaml
 counts:
-  vendored: 85
+  vendored: 99
   original: 3
   reference: 8
   submodule: 0
@@ -742,6 +742,160 @@ items:
       repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
       commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
       path: categories/07-specialized-domains/mobile-app-developer.md
+  - id: agent/utility/accessibility-expert
+    kind: agent
+    name: accessibility-expert
+    domain: utility
+    status: vendored
+    license: MIT
+    description: Expert accessibility specialist ensuring WCAG compliance, inclusive design, and assistive technology compatibility. Masters screen reader optimization, keyboard
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/ui-design/agents/accessibility-expert.md
+  - id: agent/utility/build-engineer
+    kind: agent
+    name: build-engineer
+    domain: utility
+    status: vendored
+    license: MIT
+    description: Use this agent when you need to optimize build performance, reduce compilation times, or scale build systems across growing teams.
+    source:
+      repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
+      commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+      path: categories/06-developer-experience/build-engineer.md
+  - id: agent/utility/cli-developer
+    kind: agent
+    name: cli-developer
+    domain: utility
+    status: vendored
+    license: MIT
+    description: Use this agent when building command-line tools and terminal applications that require intuitive command design, cross-platform compatibility, and optimized dev
+    source:
+      repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
+      commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+      path: categories/06-developer-experience/cli-developer.md
+  - id: agent/utility/dependency-manager
+    kind: agent
+    name: dependency-manager
+    domain: utility
+    status: vendored
+    license: MIT
+    description: Use this agent when you need to audit dependencies for vulnerabilities, resolve version conflicts, optimize bundle sizes, or implement automated dependency upda
+    source:
+      repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
+      commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+      path: categories/06-developer-experience/dependency-manager.md
+  - id: agent/utility/dx-optimizer
+    kind: agent
+    name: dx-optimizer
+    domain: utility
+    status: vendored
+    license: MIT
+    description: Use this agent when optimizing the complete developer workflow including build times, feedback loops, testing efficiency, and developer satisfaction metrics acr
+    source:
+      repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
+      commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+      path: categories/06-developer-experience/dx-optimizer.md
+  - id: agent/utility/git-workflow-manager
+    kind: agent
+    name: git-workflow-manager
+    domain: utility
+    status: vendored
+    license: MIT
+    description: Use this agent when you need to design, establish, or optimize Git workflows, branching strategies, and merge management for a project or team.
+    source:
+      repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
+      commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+      path: categories/06-developer-experience/git-workflow-manager.md
+  - id: agent/utility/incident-responder
+    kind: agent
+    name: incident-responder
+    domain: utility
+    status: vendored
+    license: MIT
+    description: Expert SRE incident responder specializing in rapid problem resolution, modern observability, and comprehensive incident management. Masters incident command, b
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/incident-response/agents/incident-responder.md
+  - id: agent/utility/legacy-modernizer
+    kind: agent
+    name: legacy-modernizer
+    domain: utility
+    status: vendored
+    license: MIT
+    description: Refactor legacy codebases, migrate outdated frameworks, and implement gradual modernization. Handles technical debt, dependency updates, and backward compatibil
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/code-refactoring/agents/legacy-modernizer.md
+  - id: agent/utility/mcp-developer
+    kind: agent
+    name: mcp-developer
+    domain: utility
+    status: vendored
+    license: MIT
+    description: Use this agent when you need to build, debug, or optimize Model Context Protocol (MCP) servers and clients that connect AI systems to external tools and data so
+    source:
+      repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
+      commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+      path: categories/06-developer-experience/mcp-developer.md
+  - id: agent/utility/mermaid-expert
+    kind: agent
+    name: mermaid-expert
+    domain: utility
+    status: vendored
+    license: MIT
+    description: Create Mermaid diagrams for flowcharts, sequences, ERDs, and architectures. Masters syntax for all diagram types and styling. Use PROACTIVELY for visual documen
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/documentation-generation/agents/mermaid-expert.md
+  - id: agent/utility/network-engineer
+    kind: agent
+    name: network-engineer
+    domain: utility
+    status: vendored
+    license: MIT
+    description: Expert network engineer specializing in modern cloud networking, security architectures, and performance optimization. Masters multi-cloud connectivity, service
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/cloud-infrastructure/agents/network-engineer.md
+  - id: agent/utility/observability-engineer
+    kind: agent
+    name: observability-engineer
+    domain: utility
+    status: vendored
+    license: MIT
+    description: Build production-ready monitoring, logging, and tracing systems. Implements comprehensive observability strategies, SLI/SLO management, and incident response wo
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/observability-monitoring/agents/observability-engineer.md
+  - id: agent/utility/refactoring-specialist
+    kind: agent
+    name: refactoring-specialist
+    domain: utility
+    status: vendored
+    license: MIT
+    description: Use when you need to transform poorly structured, complex, or duplicated code into clean, maintainable systems while preserving all existing behavior.
+    source:
+      repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
+      commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+      path: categories/06-developer-experience/refactoring-specialist.md
+  - id: agent/utility/tutorial-engineer
+    kind: agent
+    name: tutorial-engineer
+    domain: utility
+    status: vendored
+    license: MIT
+    description: "Creates step-by-step tutorials and educational content from code. Transforms complex concepts into progressive learning experiences with hands-on examples. Use "
+    source:
+      repo: "https://github.com/wshobson/agents"
+      commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
+      path: plugins/documentation-generation/agents/tutorial-engineer.md
   - id: skill/algorithmic-art
     kind: skill
     name: algorithmic-art

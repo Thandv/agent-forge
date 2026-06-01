@@ -45,6 +45,13 @@ MIT license in `LICENSE` covers only this repo's original glue code.
 - `agent/specialized/fintech-engineer` — MIT — `categories/07-specialized-domains/fintech-engineer.md`
 - `agent/specialized/game-developer` — MIT — `categories/07-specialized-domains/game-developer.md`
 - `agent/specialized/mobile-app-developer` — MIT — `categories/07-specialized-domains/mobile-app-developer.md`
+- `agent/utility/build-engineer` — MIT — `categories/06-developer-experience/build-engineer.md`
+- `agent/utility/cli-developer` — MIT — `categories/06-developer-experience/cli-developer.md`
+- `agent/utility/dependency-manager` — MIT — `categories/06-developer-experience/dependency-manager.md`
+- `agent/utility/dx-optimizer` — MIT — `categories/06-developer-experience/dx-optimizer.md`
+- `agent/utility/git-workflow-manager` — MIT — `categories/06-developer-experience/git-workflow-manager.md`
+- `agent/utility/mcp-developer` — MIT — `categories/06-developer-experience/mcp-developer.md`
+- `agent/utility/refactoring-specialist` — MIT — `categories/06-developer-experience/refactoring-specialist.md`
 
 ### https://github.com/anthropics/skills
 - Pinned commit: `da20c92503b2e8ff1cf28ca81a0df4673debdbf7`
@@ -104,6 +111,13 @@ MIT license in `LICENSE` covers only this repo's original glue code.
 - `agent/security/backend-security-coder` — MIT — `plugins/backend-api-security/agents/backend-security-coder.md`
 - `agent/security/security-auditor` — MIT — `plugins/security-compliance/agents/security-auditor.md`
 - `agent/security/threat-modeling-expert` — MIT — `plugins/security-scanning/agents/threat-modeling-expert.md`
+- `agent/utility/accessibility-expert` — MIT — `plugins/ui-design/agents/accessibility-expert.md`
+- `agent/utility/incident-responder` — MIT — `plugins/incident-response/agents/incident-responder.md`
+- `agent/utility/legacy-modernizer` — MIT — `plugins/code-refactoring/agents/legacy-modernizer.md`
+- `agent/utility/mermaid-expert` — MIT — `plugins/documentation-generation/agents/mermaid-expert.md`
+- `agent/utility/network-engineer` — MIT — `plugins/cloud-infrastructure/agents/network-engineer.md`
+- `agent/utility/observability-engineer` — MIT — `plugins/observability-monitoring/agents/observability-engineer.md`
+- `agent/utility/tutorial-engineer` — MIT — `plugins/documentation-generation/agents/tutorial-engineer.md`
 
 ## Referenced content (NOT copied — see upstream for license & install)
 
