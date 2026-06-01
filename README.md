@@ -16,8 +16,9 @@ upstreams ──sync(scan+license gate)──► registry/ (canonical) ──bui
 - **One source of truth.** Agents are markdown + YAML frontmatter; skills follow
   the `SKILL.md` standard. Everything lives in `registry/`.
 - **Multi-tool.** Adapters emit Claude Code (`.claude/agents`, `.claude/skills`),
-  Codex (`AGENTS.md` + `.codex/`), Cursor (`.cursor/rules/*.mdc`), and Gemini CLI
-  (`GEMINI.md` + `.gemini/`).
+  Codex (`AGENTS.md` + `.codex/`), Cursor (`.cursor/rules/*.mdc`), Gemini CLI
+  (`GEMINI.md` + `.gemini/`), and **Thandv** (a local open-weights Claude-style
+  CLI — agents become `~/.thandv/personas/*.json`, skills become `~/.thandv/skills/*.md`).
 - **Security is the top priority.** All upstream content is untrusted until it
   passes a static security scanner; sources are pinned to commit SHAs and locked
   by file hash; nothing vendored is ever executed by the tooling. See
@@ -82,6 +83,24 @@ GitHub and install just the domains you want (keeps context lean):
 The root marketplace is generated from the registry by
 `scripts/build_marketplace.py`; CI fails if it drifts out of sync. (A build-time
 copy is also emitted under `dist/claude-plugin/` by `scripts/build.sh`.)
+
+### Use it with Thandv (local open-weights CLI)
+
+[Thandv](https://github.com/Thandv) is a local, open-weights, Claude-style coding
+assistant with personas + a skills directory. agent-forge feeds it directly:
+
+```bash
+scripts/build.sh --tool thandv
+scripts/install.sh --tool thandv          # -> ~/.thandv (personas/ + skills/)
+thandv --persona security-auditor "review this diff"
+thandv --persona token-optimizer "this session is getting expensive"
+```
+
+Each agent-forge **agent** becomes a selectable Thandv `--persona` (its body is the
+system prompt, with Thandv's `tool-use`/`honesty` skills attached); each **skill**
+becomes a `~/.thandv/skills/*.md` entry. Loading user personas from disk needs the
+small thandv patch on the `agent-forge-personas` branch (`thandv/personas.py` +
+`config.py`); skills work unpatched.
 
 ## How content is selected (the gate)
 

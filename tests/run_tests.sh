@@ -36,9 +36,16 @@ rm -rf "$EVIL"
 echo "== build: all tools must render =="
 python3 scripts/build.py --tool all --out /tmp/af-test-dist >/dev/null 2>&1
 expect_exit 0 $? "build --tool all"
-for t in claude-code claude-plugin codex cursor gemini; do
+for t in claude-code claude-plugin codex cursor gemini thandv; do
   if [ -d "/tmp/af-test-dist/$t" ]; then pass "dist/$t exists"; else fail "dist/$t missing"; fi
 done
+# thandv image shape: agent -> persona json, skill -> body-only md
+if [ -f /tmp/af-test-dist/thandv/personas/token-optimizer.json ] && \
+   [ -f /tmp/af-test-dist/thandv/skills/brainstorming.md ]; then
+  pass "thandv personas + skills emitted"
+else fail "thandv image shape wrong"; fi
+python3 -c "import json,sys; d=json.load(open('/tmp/af-test-dist/thandv/personas/token-optimizer.json')); sys.exit(0 if d.get('system_prompt') and d.get('skills') else 1)" 2>/dev/null
+expect_exit 0 $? "thandv persona json well-formed"
 python3 -c "import json; json.load(open('/tmp/af-test-dist/claude-plugin/.claude-plugin/marketplace.json'))" 2>/dev/null
 expect_exit 0 $? "marketplace.json is valid JSON"
 

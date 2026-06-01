@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 from adapters import common, claude_code, claude_plugin, codex, cursor, gemini  # noqa: E402
+from adapters import thandv as thandv_adapter  # noqa: E402
 
 ADAPTERS = {
     "claude-code": claude_code,
@@ -25,6 +26,7 @@ ADAPTERS = {
     "codex": codex,
     "cursor": cursor,
     "gemini": gemini,
+    "thandv": thandv_adapter,
 }
 
 

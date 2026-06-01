@@ -51,6 +51,10 @@ TOOLS = {
                 (".gemini/skills", ".gemini/skills"),
                 ("GEMINI.md", "GEMINI.md")],
     },
+    "thandv": {
+        "target": "~/.thandv",
+        "map": [("skills", "skills"), ("personas", "personas")],
+    },
 }
 
 

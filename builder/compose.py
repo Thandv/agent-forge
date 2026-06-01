@@ -26,10 +26,12 @@ HERE = Path(__file__).resolve().parent
 REPO = HERE.parent
 sys.path.insert(0, str(REPO))
 from adapters import common, claude_code, claude_plugin, codex, cursor, gemini  # noqa: E402
+from adapters import thandv as thandv_adapter  # noqa: E402
 from scripts import scan as scanner  # noqa: E402
 
 ADAPTERS = {"claude-code": claude_code, "claude-plugin": claude_plugin,
-            "codex": codex, "cursor": cursor, "gemini": gemini}
+            "codex": codex, "cursor": cursor, "gemini": gemini,
+            "thandv": thandv_adapter}
 CACHE = HERE / ".cache"
 
 
