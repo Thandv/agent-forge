@@ -58,6 +58,14 @@
       "category": "frontend"
     },
     {
+      "name": "agentforge-improvement",
+      "source": "./plugins/improvement",
+      "description": "agent-forge improvement agents (6).",
+      "version": "0.1.0",
+      "license": "MIT",
+      "category": "improvement"
+    },
+    {
       "name": "agentforge-languages",
       "source": "./plugins/languages",
       "description": "agent-forge languages agents (4).",

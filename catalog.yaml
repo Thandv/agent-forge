@@ -1,7 +1,7 @@
 generated_from: sources/manifest.yaml
 counts:
   vendored: 99
-  original: 3
+  original: 9
   reference: 8
   submodule: 0
 items:
@@ -357,6 +357,72 @@ items:
       repo: "https://github.com/wshobson/agents"
       commit: 0818067b4ecad18c234b2ae427cc44f2053792d4
       path: plugins/multi-platform-apps/agents/ui-ux-designer.md
+  - id: agent/improvement/improvement-implementer
+    kind: agent
+    name: improvement-implementer
+    domain: improvement
+    status: original
+    license: MIT
+    description: "Implement an approved improvement plan as the smallest correct diff, confined to the target repo and following its style. Use as the build step of an automated "
+    source:
+      repo: original
+      commit: original
+      path: registry/agents/improvement/improvement-implementer/agent.md
+  - id: agent/improvement/improvement-orchestrator
+    kind: agent
+    name: improvement-orchestrator
+    domain: improvement
+    status: original
+    license: MIT
+    description: "Coordinates a safe self-improvement loop for a software product: select a high-value improvement, plan it, implement it on an isolated branch, test it, review i"
+    source:
+      repo: original
+      commit: original
+      path: registry/agents/improvement/improvement-orchestrator/agent.md
+  - id: agent/improvement/improvement-planner
+    kind: agent
+    name: improvement-planner
+    domain: improvement
+    status: original
+    license: MIT
+    description: "Turn a chosen improvement into a minimal, testable implementation plan: exact files to touch, the smallest correct approach, the test that proves it, and a roll"
+    source:
+      repo: original
+      commit: original
+      path: registry/agents/improvement/improvement-planner/agent.md
+  - id: agent/improvement/improvement-researcher
+    kind: agent
+    name: improvement-researcher
+    domain: improvement
+    status: original
+    license: MIT
+    description: "Research high-value improvement opportunities in a codebase or product: bugs, missing tests, performance, security, developer experience, stale deps, docs gaps."
+    source:
+      repo: original
+      commit: original
+      path: registry/agents/improvement/improvement-researcher/agent.md
+  - id: agent/improvement/improvement-reviewer
+    kind: agent
+    name: improvement-reviewer
+    domain: improvement
+    status: original
+    license: MIT
+    description: "Adversarially review a proposed improvement diff before it becomes a PR: correctness, security, regressions, and scope. Use as the final gate of an automated im"
+    source:
+      repo: original
+      commit: original
+      path: registry/agents/improvement/improvement-reviewer/agent.md
+  - id: agent/improvement/improvement-tester
+    kind: agent
+    name: improvement-tester
+    domain: improvement
+    status: original
+    license: MIT
+    description: "Verify an improvement actually works: add or extend tests, run the suite, and report pass/fail with evidence. Use as the verification step of an automated impro"
+    source:
+      repo: original
+      commit: original
+      path: registry/agents/improvement/improvement-tester/agent.md
   - id: agent/languages/golang-pro
     kind: agent
     name: golang-pro
