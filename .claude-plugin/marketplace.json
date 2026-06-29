@@ -140,7 +140,7 @@
     {
       "name": "agentforge-skills",
       "source": "./plugins/skills",
-      "description": "agent-forge skills (21).",
+      "description": "agent-forge skills (22).",
       "version": "0.1.0",
       "license": "Apache-2.0",
       "category": "skills"

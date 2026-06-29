@@ -1,7 +1,7 @@
 generated_from: sources/manifest.yaml
 counts:
   vendored: 99
-  original: 9
+  original: 10
   reference: 8
   submodule: 0
 items:
@@ -1063,6 +1063,17 @@ items:
       repo: "https://github.com/anthropics/skills"
       commit: da20c92503b2e8ff1cf28ca81a0df4673debdbf7
       path: skills/frontend-design
+  - id: skill/hermes-tweet
+    kind: skill
+    name: hermes-tweet
+    domain: null
+    status: original
+    license: MIT
+    description: Use the Hermes Tweet Hermes Agent plugin for X/Twitter research, monitoring, and approval-gated account actions through Xquik.
+    source:
+      repo: original
+      commit: original
+      path: registry/skills/hermes-tweet/SKILL.md
   - id: skill/internal-comms
     kind: skill
     name: internal-comms
