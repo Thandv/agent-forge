@@ -65,22 +65,22 @@ builder/
 The builder re-runs `scan.py` across the merged tree (defense in depth — it does
 not trust a content repo's own green CI) before emitting the image.
 
-## Keeping the split repos in sync (live today)
+## Keeping the split repos in sync (retired 2026-07)
 
-`scripts/sync_splits.py` regenerates every bundle from the monorepo registry and
-pushes **only the repos whose content changed** to `Thandv/agent-forge-*`
-(idempotent; `--dry-run` to preview). The `sync-splits.yml` workflow runs it on
-every push to `main` that touches `registry/`, `catalog.yaml`, or the bundled
-gate scripts — so an auto-refresh PR merging into `main` fans out to the split
-repos automatically. Cross-repo pushes need a `SPLIT_PUSH_TOKEN` secret (a PAT
-with `repo` scope); without it the job skips cleanly.
+The 15 published `Thandv/agent-forge-*` repos are **archived**: the split was
+demonstrated end-to-end (monorepo → `split.py` → bundles → `compose.py` →
+identical image), but maintaining 15 mirror repos added noise without users to
+serve. The monorepo is the single source of truth again.
 
-Full automated chain:
+The tooling all still works and the decision is reversible:
 
-```
-upstream commit → refresh.yml (weekly) → PR (gated) → merge to main
-   → sync-splits.yml → 15 per-domain repos updated
-```
+- `scripts/split.py` regenerates `split-out/agent-forge-<domain>/` bundles locally.
+- `scripts/sync_splits.py` regenerates every bundle and pushes **only the repos
+  whose content changed** (idempotent; `--dry-run` to preview). To revive the
+  channel: unarchive the repos, restore `sync-splits.yml` (in git history), and
+  set a `SPLIT_PUSH_TOKEN` secret (PAT with `repo` scope).
+- The archived repos remain clonable, so composing from pinned remotes
+  (`builder/sources.remote.example.yaml`) keeps working.
 
 ## Why it works without rework
 
