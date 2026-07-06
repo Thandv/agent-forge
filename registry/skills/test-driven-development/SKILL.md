@@ -3,7 +3,7 @@ name: test-driven-development
 description: Use when implementing any feature or bugfix, before writing implementation code
 source:
   repo: "https://github.com/obra/superpowers"
-  commit: 6fd4507659784c351abbd2bc264c7162cfd386dc
+  commit: d884ae04edebef577e82ff7c4e143debd0bbec99
   path: skills/test-driven-development
 license: MIT
 ---
@@ -361,7 +361,7 @@ Never fix bugs without a test.
 
 ## Testing Anti-Patterns
 
-When adding mocks or test utilities, read @testing-anti-patterns.md to avoid common pitfalls:
+When adding mocks or test utilities, read [testing-anti-patterns.md](testing-anti-patterns.md) to avoid common pitfalls:
 - Testing mock behavior instead of real behavior
 - Adding test-only methods to production classes
 - Mocking without understanding dependencies

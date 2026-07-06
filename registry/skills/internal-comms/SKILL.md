@@ -4,7 +4,7 @@ description: A set of resources to help me write all kinds of internal communica
 license: Apache-2.0
 source:
   repo: "https://github.com/anthropics/skills"
-  commit: da20c92503b2e8ff1cf28ca81a0df4673debdbf7
+  commit: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
   path: skills/internal-comms
 ---
 

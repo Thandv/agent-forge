@@ -1,7 +1,7 @@
 ---
 name: multi-agent-coordinator
 description: Use when coordinating multiple concurrent agents that need to communicate, share state, synchronize work, and handle distributed failures across a system.
-model: opus
+model: inherit
 tools:
   - Read
   - Write

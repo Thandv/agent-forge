@@ -2,7 +2,7 @@
 name: fintech-engineer
 description: Use when building payment systems, financial integrations, or compliance-heavy financial applications that require secure transaction processing, regulatory adherence, and high transaction accuracy.
 domain: specialized
-model: opus
+model: inherit
 tools:
   - Read
   - Write
@@ -12,7 +12,7 @@ tools:
   - Grep
 source:
   repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-  commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+  commit: c193ad45419c13ceb49a43740186f680ad5ea264
   path: categories/07-specialized-domains/fintech-engineer.md
 license: MIT
 ---

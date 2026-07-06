@@ -1,7 +1,7 @@
 ---
 name: fintech-engineer
 description: Use when building payment systems, financial integrations, or compliance-heavy financial applications that require secure transaction processing, regulatory adherence, and high transaction accuracy.
-model: opus
+model: inherit
 tools:
   - Read
   - Write
