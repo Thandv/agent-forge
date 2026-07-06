@@ -1,7 +1,7 @@
 ---
 name: workflow-orchestrator
 description: Use this agent when you need to design, implement, or optimize complex business process workflows with multiple states, error handling, and transaction management.
-model: opus
+model: inherit
 tools:
   - Read
   - Write

@@ -2,7 +2,7 @@
 name: workflow-orchestrator
 description: Use this agent when you need to design, implement, or optimize complex business process workflows with multiple states, error handling, and transaction management.
 domain: meta
-model: opus
+model: inherit
 tools:
   - Read
   - Write
@@ -11,7 +11,7 @@ tools:
   - Grep
 source:
   repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-  commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+  commit: c193ad45419c13ceb49a43740186f680ad5ea264
   path: categories/09-meta-orchestration/workflow-orchestrator.md
 license: MIT
 ---

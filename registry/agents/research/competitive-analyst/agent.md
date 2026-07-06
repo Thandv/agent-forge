@@ -11,7 +11,7 @@ tools:
   - WebSearch
 source:
   repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-  commit: 2f9cf8b9562dcc235cc2296bda6df82d60e800be
+  commit: c193ad45419c13ceb49a43740186f680ad5ea264
   path: categories/10-research-analysis/competitive-analyst.md
 license: MIT
 ---
