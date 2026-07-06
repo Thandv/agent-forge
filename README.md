@@ -143,7 +143,7 @@ python3 builder/compose.py      # merge content sources (local or pinned git) in
 Demonstrated round trip: monorepo → `split.py` → bundles → `compose.py` →
 identical image. See [docs/roadmap-split.md](docs/roadmap-split.md).
 
-The split was demonstrated live as 15 published per-domain repos
+The split was demonstrated live as 17 published per-domain repos
 ([`Thandv/agent-forge-*`](https://github.com/Thandv?tab=repositories&q=agent-forge-),
 since archived — this monorepo is the single source of truth). The archived
 repos remain clonable, so remote composition still works:

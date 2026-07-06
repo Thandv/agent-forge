@@ -67,9 +67,9 @@ not trust a content repo's own green CI) before emitting the image.
 
 ## Keeping the split repos in sync (retired 2026-07)
 
-The 15 published `Thandv/agent-forge-*` repos are **archived**: the split was
+The 17 published `Thandv/agent-forge-*` repos are **archived**: the split was
 demonstrated end-to-end (monorepo → `split.py` → bundles → `compose.py` →
-identical image), but maintaining 15 mirror repos added noise without users to
+identical image), but maintaining 17 mirror repos added noise without users to
 serve. The monorepo is the single source of truth again.
 
 The tooling all still works and the decision is reversible:

@@ -1,5 +1,7 @@
 # Example: compose the published per-domain repos (Thandv/agent-forge-*).
-# Each pinned to its current main SHA. Regenerate SHAs as the repos evolve.
+# NOTE: those repos are ARCHIVED (read-only) as of 2026-07 — still clonable at
+# the pinned SHAs below, so this example keeps working, but they no longer evolve.
+# The monorepo is the single source of truth; see docs/roadmap-split.md.
 # Usage: python3 builder/compose.py --sources builder/sources.remote.example.yaml
 
 out: dist
