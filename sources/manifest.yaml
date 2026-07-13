@@ -18,7 +18,7 @@
 sources:
   - id: wshobson-agents
     repo: https://github.com/wshobson/agents
-    commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+    commit: 2de74ac1c8f6669821dcef13153332c3168033c1
     license: MIT
     kind: agents
     mode: vendor
@@ -189,7 +189,7 @@ sources:
 
   - id: voltagent-subagents
     repo: https://github.com/VoltAgent/awesome-claude-code-subagents
-    commit: c193ad45419c13ceb49a43740186f680ad5ea264
+    commit: 947b44ca0c58d606b084e9cb1a2389335b49278b
     license: MIT
     kind: agents
     mode: vendor

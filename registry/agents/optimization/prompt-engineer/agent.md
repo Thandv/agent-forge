@@ -5,7 +5,7 @@ domain: optimization
 model: inherit
 source:
   repo: "https://github.com/wshobson/agents"
-  commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+  commit: 2de74ac1c8f6669821dcef13153332c3168033c1
   path: plugins/llm-application-dev/agents/prompt-engineer.md
 license: MIT
 ---
@@ -64,7 +64,7 @@ Expert prompt engineer specializing in advanced prompting methodologies and LLM 
 - Multi-turn conversation management
 - Image and multimodal prompt engineering
 
-#### Anthropic Claude (Claude Opus 4.7, Sonnet 4.6, Haiku 4.5)
+#### Anthropic Claude (Claude Opus 4.8, Sonnet 5, Haiku 4.5)
 
 - Constitutional AI alignment with Claude's training
 - Tool use optimization for complex workflows
