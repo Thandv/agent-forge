@@ -4,7 +4,7 @@ description: Toolkit for styling artifacts with a theme. These artifacts can be 
 license: Apache-2.0
 source:
   repo: "https://github.com/anthropics/skills"
-  commit: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
+  commit: fa0fa64bdc967915dc8399e803be67759e1e62b8
   path: skills/theme-factory
 ---
 

@@ -3,7 +3,7 @@ name: skill-creator
 description: "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy."
 source:
   repo: "https://github.com/anthropics/skills"
-  commit: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
+  commit: fa0fa64bdc967915dc8399e803be67759e1e62b8
   path: skills/skill-creator
 license: Apache-2.0
 ---
