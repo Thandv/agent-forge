@@ -3,7 +3,7 @@ name: receiving-code-review
 description: Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation
 source:
   repo: "https://github.com/obra/superpowers"
-  commit: d884ae04edebef577e82ff7c4e143debd0bbec99
+  commit: 3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9
   path: skills/receiving-code-review
 license: MIT
 ---
@@ -208,11 +208,3 @@ You understand 1,2,3,6. Unclear on 4,5.
 ## GitHub Thread Replies
 
 When replying to inline review comments on GitHub, reply in the comment thread (`gh api repos/{owner}/{repo}/pulls/{pr}/comments/{id}/replies`), not as a top-level PR comment.
-
-## The Bottom Line
-
-**External feedback = suggestions to evaluate, not orders to follow.**
-
-Verify. Question. Then implement.
-
-No performative agreement. Technical rigor always.

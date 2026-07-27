@@ -3,7 +3,7 @@ name: writing-plans
 description: Use when you have a spec or requirements for a multi-step task, before touching code
 source:
   repo: "https://github.com/obra/superpowers"
-  commit: d884ae04edebef577e82ff7c4e143debd0bbec99
+  commit: 3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9
   path: skills/writing-plans
 license: MIT
 ---
@@ -139,12 +139,6 @@ Every step must contain the actual content an engineer needs. These are **plan f
 - "Similar to Task N" (repeat the code — the engineer may be reading tasks out of order)
 - Steps that describe what to do without showing how (code blocks required for code steps)
 - References to types, functions, or methods not defined in any task
-
-## Remember
-- Exact file paths always
-- Complete code in every step — if a step changes code, show the code
-- Exact commands with expected output
-- DRY, YAGNI, TDD, frequent commits
 
 ## Self-Review
 

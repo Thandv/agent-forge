@@ -5,7 +5,7 @@ domain: devops
 model: haiku
 source:
   repo: "https://github.com/wshobson/agents"
-  commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+  commit: c4b82b0ad771190355eb8e204b1329732a18449a
   path: plugins/cicd-automation/agents/deployment-engineer.md
 license: MIT
 ---
