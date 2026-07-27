@@ -3,7 +3,7 @@ name: verification-before-completion
 description: Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always
 source:
   repo: "https://github.com/obra/superpowers"
-  commit: d884ae04edebef577e82ff7c4e143debd0bbec99
+  commit: 3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9
   path: skills/verification-before-completion
 license: MIT
 ---
@@ -11,8 +11,6 @@ license: MIT
 # Verification Before Completion
 
 ## Overview
-
-Claiming work is complete without verification is dishonesty, not efficiency.
 
 **Core principle:** Evidence before claims, always.
 
@@ -110,15 +108,6 @@ Skip any step = lying, not verifying
 ❌ Trust agent report
 ```
 
-## Why This Matters
-
-From 24 failure memories:
-- your human partner said "I don't believe you" - trust broken
-- Undefined functions shipped - would crash
-- Missing requirements shipped - incomplete features
-- Time wasted on false completion → redirect → rework
-- Violates: "Honesty is a core value. If you lie, you'll be replaced."
-
 ## When To Apply
 
 **ALWAYS before:**
@@ -134,11 +123,3 @@ From 24 failure memories:
 - Paraphrases and synonyms
 - Implications of success
 - ANY communication suggesting completion/correctness
-
-## The Bottom Line
-
-**No shortcuts for verification.**
-
-Run the command. Read the output. THEN claim the result.
-
-This is non-negotiable.
