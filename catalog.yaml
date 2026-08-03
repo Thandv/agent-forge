@@ -14,7 +14,7 @@ items:
     description: "Expert backend architect specializing in scalable API design, microservices architecture, and distributed systems. Masters REST/GraphQL/gRPC APIs, event-driven "
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/backend-development/agents/backend-architect.md
   - id: agent/backend/performance-engineer
     kind: agent
@@ -25,7 +25,7 @@ items:
     description: "Expert performance engineer specializing in modern observability, application optimization, and scalable system performance. Masters OpenTelemetry, distributed "
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/application-performance/agents/performance-engineer.md
   - id: agent/backend/sql-pro
     kind: agent
@@ -36,7 +36,7 @@ items:
     description: Master modern SQL with cloud-native databases, OLTP/OLAP optimization, and advanced query techniques. Expert in performance tuning, data modeling, and hybrid an
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/database-design/agents/sql-pro.md
   - id: agent/data/ai-engineer
     kind: agent
@@ -47,7 +47,7 @@ items:
     description: Build production-ready LLM applications, advanced RAG systems, and intelligent agents. Implements vector search, multimodal AI, agent orchestration, and enterpr
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/llm-application-dev/agents/ai-engineer.md
   - id: agent/data/data-engineer
     kind: agent
@@ -58,7 +58,7 @@ items:
     description: Build scalable data pipelines, modern data warehouses, and real-time streaming architectures. Implements Apache Spark, dbt, Airflow, and cloud-native data platf
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/data-engineering/agents/data-engineer.md
   - id: agent/data/data-scientist
     kind: agent
@@ -69,7 +69,7 @@ items:
     description: Expert data scientist for advanced analytics, machine learning, and statistical modeling. Handles complex data analysis, predictive modeling, and business intel
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/machine-learning-ops/agents/data-scientist.md
   - id: agent/data/ml-engineer
     kind: agent
@@ -80,7 +80,7 @@ items:
     description: "Build production ML systems with PyTorch 2.x, TensorFlow, and modern ML frameworks. Implements model serving, feature engineering, A/B testing, and monitoring. "
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/machine-learning-ops/agents/ml-engineer.md
   - id: agent/devops/cloud-architect
     kind: agent
@@ -91,7 +91,7 @@ items:
     description: Expert cloud architect specializing in AWS/Azure/GCP/OCI multi-cloud infrastructure design, advanced IaC (Terraform/OpenTofu/CDK), FinOps cost optimization, and
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/cloud-infrastructure/agents/cloud-architect.md
   - id: agent/devops/deployment-engineer
     kind: agent
@@ -102,7 +102,7 @@ items:
     description: Expert deployment engineer specializing in modern CI/CD pipelines, GitOps workflows, and advanced deployment automation. Masters GitHub Actions, ArgoCD/Flux, pr
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/cicd-automation/agents/deployment-engineer.md
   - id: agent/devops/devops-troubleshooter
     kind: agent
@@ -113,7 +113,7 @@ items:
     description: Expert DevOps troubleshooter specializing in rapid incident response, advanced debugging, and modern observability. Masters log analysis, distributed tracing, K
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/cicd-automation/agents/devops-troubleshooter.md
   - id: agent/devops/kubernetes-architect
     kind: agent
@@ -124,7 +124,7 @@ items:
     description: Expert Kubernetes architect specializing in cloud-native infrastructure, advanced GitOps workflows (ArgoCD/Flux), and enterprise container orchestration. Master
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/kubernetes-operations/agents/kubernetes-architect.md
   - id: agent/devops/terraform-specialist
     kind: agent
@@ -135,7 +135,7 @@ items:
     description: Expert Terraform/OpenTofu specialist mastering advanced IaC automation, state management, and enterprise infrastructure patterns. Handles complex module design,
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/deployment-strategies/agents/terraform-specialist.md
   - id: agent/docs/api-documenter
     kind: agent
@@ -146,7 +146,7 @@ items:
     description: Master API documentation with OpenAPI 3.1, AI-powered tools, and modern developer experience practices. Create interactive docs, generate SDKs, and build compre
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/documentation-generation/agents/api-documenter.md
   - id: agent/docs/docs-architect
     kind: agent
@@ -157,7 +157,7 @@ items:
     description: Creates comprehensive technical documentation from existing codebases. Analyzes architecture, design patterns, and implementation details to produce long-form t
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/documentation-generation/agents/docs-architect.md
   - id: agent/experts/django-expert
     kind: agent
@@ -344,7 +344,7 @@ items:
     description: Build React components, implement responsive layouts, and handle client-side state management. Masters React 19, Next.js 15, and modern frontend architecture. O
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/application-performance/agents/frontend-developer.md
   - id: agent/frontend/ui-ux-designer
     kind: agent
@@ -355,7 +355,7 @@ items:
     description: Create interface designs, wireframes, and design systems. Masters user research, accessibility standards, and modern design tools. Specializes in design tokens,
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/multi-platform-apps/agents/ui-ux-designer.md
   - id: agent/improvement/improvement-implementer
     kind: agent
@@ -432,7 +432,7 @@ items:
     description: Master Go 1.21+ with modern patterns, advanced concurrency, performance optimization, and production-ready microservices. Expert in the latest Go ecosystem incl
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/systems-programming/agents/golang-pro.md
   - id: agent/languages/python-pro
     kind: agent
@@ -443,7 +443,7 @@ items:
     description: Master Python 3.12+ with modern features, async programming, performance optimization, and production-ready practices. Expert in the latest Python ecosystem inc
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/python-development/agents/python-pro.md
   - id: agent/languages/rust-pro
     kind: agent
@@ -454,7 +454,7 @@ items:
     description: Master Rust 1.75+ with modern async patterns, advanced type system features, and production-ready systems programming. Expert in the latest Rust ecosystem inclu
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/systems-programming/agents/rust-pro.md
   - id: agent/languages/typescript-pro
     kind: agent
@@ -465,7 +465,7 @@ items:
     description: Master TypeScript with advanced types, generics, and strict type safety. Handles complex type systems, decorators, and enterprise-grade patterns. Use PROACTIVEL
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/javascript-typescript/agents/typescript-pro.md
   - id: agent/meta/agent-organizer
     kind: agent
@@ -476,7 +476,7 @@ items:
     description: Use when assembling and optimizing multi-agent teams to execute complex projects that require careful task decomposition, agent capability matching, and workflo
     source:
       repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-      commit: c193ad45419c13ceb49a43740186f680ad5ea264
+      commit: 91810b33c707111e05e0988b12e7385d7b5cfe9d
       path: categories/09-meta-orchestration/agent-organizer.md
   - id: agent/meta/error-coordinator
     kind: agent
@@ -487,7 +487,7 @@ items:
     description: "Use this agent when distributed system errors occur and need coordinated handling across multiple components, or when you need to implement comprehensive error "
     source:
       repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-      commit: c193ad45419c13ceb49a43740186f680ad5ea264
+      commit: 91810b33c707111e05e0988b12e7385d7b5cfe9d
       path: categories/09-meta-orchestration/error-coordinator.md
   - id: agent/meta/knowledge-synthesizer
     kind: agent
@@ -498,7 +498,7 @@ items:
     description: Use when you need to extract actionable patterns from agent interactions, synthesize insights across multiple workflows, and enable organizational learning from
     source:
       repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-      commit: c193ad45419c13ceb49a43740186f680ad5ea264
+      commit: 91810b33c707111e05e0988b12e7385d7b5cfe9d
       path: categories/09-meta-orchestration/knowledge-synthesizer.md
   - id: agent/meta/multi-agent-coordinator
     kind: agent
@@ -509,7 +509,7 @@ items:
     description: Use when coordinating multiple concurrent agents that need to communicate, share state, synchronize work, and handle distributed failures across a system.
     source:
       repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-      commit: c193ad45419c13ceb49a43740186f680ad5ea264
+      commit: 91810b33c707111e05e0988b12e7385d7b5cfe9d
       path: categories/09-meta-orchestration/multi-agent-coordinator.md
   - id: agent/meta/workflow-orchestrator
     kind: agent
@@ -520,7 +520,7 @@ items:
     description: Use this agent when you need to design, implement, or optimize complex business process workflows with multiple states, error handling, and transaction manageme
     source:
       repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-      commit: c193ad45419c13ceb49a43740186f680ad5ea264
+      commit: 91810b33c707111e05e0988b12e7385d7b5cfe9d
       path: categories/09-meta-orchestration/workflow-orchestrator.md
   - id: agent/optimization/context-manager
     kind: agent
@@ -531,7 +531,7 @@ items:
     description: Elite AI context engineering specialist mastering dynamic context management, vector databases, knowledge graphs, and intelligent memory systems. Orchestrates c
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/context-management/agents/context-manager.md
   - id: agent/optimization/prompt-engineer
     kind: agent
@@ -542,7 +542,7 @@ items:
     description: Expert prompt engineer specializing in advanced prompting techniques, LLM optimization, and AI system design. Masters chain-of-thought, constitutional AI, and p
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/llm-application-dev/agents/prompt-engineer.md
   - id: agent/optimization/token-optimizer
     kind: agent
@@ -564,7 +564,7 @@ items:
     description: Use when analyzing business processes, gathering requirements from stakeholders, or identifying process improvement opportunities to drive operational efficienc
     source:
       repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-      commit: c193ad45419c13ceb49a43740186f680ad5ea264
+      commit: 91810b33c707111e05e0988b12e7385d7b5cfe9d
       path: categories/08-business-product/business-analyst.md
   - id: agent/product/product-manager
     kind: agent
@@ -575,7 +575,7 @@ items:
     description: Use this agent when you need to make product strategy decisions, prioritize features, or define roadmap plans based on user needs and business goals.
     source:
       repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-      commit: c193ad45419c13ceb49a43740186f680ad5ea264
+      commit: 91810b33c707111e05e0988b12e7385d7b5cfe9d
       path: categories/08-business-product/product-manager.md
   - id: agent/product/scrum-master
     kind: agent
@@ -586,7 +586,7 @@ items:
     description: Use when teams need facilitation, process optimization, velocity improvement, or agile ceremony management—especially for sprint planning, retrospectives, imped
     source:
       repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-      commit: c193ad45419c13ceb49a43740186f680ad5ea264
+      commit: 91810b33c707111e05e0988b12e7385d7b5cfe9d
       path: categories/08-business-product/scrum-master.md
   - id: agent/product/technical-writer
     kind: agent
@@ -597,7 +597,7 @@ items:
     description: Use this agent when you need to create, improve, or maintain technical documentation including API references, user guides, SDK documentation, and getting-start
     source:
       repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-      commit: c193ad45419c13ceb49a43740186f680ad5ea264
+      commit: 91810b33c707111e05e0988b12e7385d7b5cfe9d
       path: categories/08-business-product/technical-writer.md
   - id: agent/product/ux-researcher
     kind: agent
@@ -608,7 +608,7 @@ items:
     description: Use this agent when you need to conduct user research, analyze user behavior, or generate actionable insights to validate design decisions and uncover user need
     source:
       repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-      commit: c193ad45419c13ceb49a43740186f680ad5ea264
+      commit: 91810b33c707111e05e0988b12e7385d7b5cfe9d
       path: categories/08-business-product/ux-researcher.md
   - id: agent/research/competitive-analyst
     kind: agent
@@ -619,7 +619,7 @@ items:
     description: "Use when you need to analyze direct and indirect competitors, benchmark against market leaders, or develop strategies to strengthen competitive positioning and "
     source:
       repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-      commit: c193ad45419c13ceb49a43740186f680ad5ea264
+      commit: 91810b33c707111e05e0988b12e7385d7b5cfe9d
       path: categories/10-research-analysis/competitive-analyst.md
   - id: agent/research/market-researcher
     kind: agent
@@ -630,7 +630,7 @@ items:
     description: Use this agent when you need to analyze markets, understand consumer behavior, assess competitive landscapes, and size opportunities to inform business strategy
     source:
       repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-      commit: c193ad45419c13ceb49a43740186f680ad5ea264
+      commit: 91810b33c707111e05e0988b12e7385d7b5cfe9d
       path: categories/10-research-analysis/market-researcher.md
   - id: agent/research/research-analyst
     kind: agent
@@ -641,7 +641,7 @@ items:
     description: Use this agent when you need comprehensive research across multiple sources with synthesis of findings into actionable insights, trend identification, and detai
     source:
       repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-      commit: c193ad45419c13ceb49a43740186f680ad5ea264
+      commit: 91810b33c707111e05e0988b12e7385d7b5cfe9d
       path: categories/10-research-analysis/research-analyst.md
   - id: agent/research/trend-analyst
     kind: agent
@@ -652,7 +652,7 @@ items:
     description: Use when analyzing emerging patterns, predicting industry shifts, or developing future scenarios to inform strategic planning and competitive positioning.
     source:
       repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-      commit: c193ad45419c13ceb49a43740186f680ad5ea264
+      commit: 91810b33c707111e05e0988b12e7385d7b5cfe9d
       path: categories/10-research-analysis/trend-analyst.md
   - id: agent/review/architect-review
     kind: agent
@@ -663,7 +663,7 @@ items:
     description: Master software architect specializing in modern architecture patterns, clean architecture, microservices, event-driven systems, and DDD. Reviews system designs
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/comprehensive-review/agents/architect-review.md
   - id: agent/review/code-reviewer
     kind: agent
@@ -674,7 +674,7 @@ items:
     description: Elite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance optimization, and production reliability. Master
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/code-documentation/agents/code-reviewer.md
   - id: agent/review/debugger
     kind: agent
@@ -685,7 +685,7 @@ items:
     description: Debugging specialist for errors, test failures, and unexpected behavior. Use proactively when encountering any issues.
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/debugging-toolkit/agents/debugger.md
   - id: agent/review/error-detective
     kind: agent
@@ -696,7 +696,7 @@ items:
     description: Search logs and codebases for error patterns, stack traces, and anomalies. Correlates errors across systems and identifies root causes. Use PROACTIVELY when deb
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/distributed-debugging/agents/error-detective.md
   - id: agent/review/tdd-orchestrator
     kind: agent
@@ -707,7 +707,7 @@ items:
     description: Master TDD orchestrator specializing in red-green-refactor discipline, multi-agent workflow coordination, and comprehensive test-driven development practices. E
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/tdd-workflows/agents/tdd-orchestrator.md
   - id: agent/review/test-automator
     kind: agent
@@ -718,7 +718,7 @@ items:
     description: Create comprehensive test suites including unit, integration, and E2E tests. Supports TDD/BDD workflows. Use for test creation during feature development.
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/backend-development/agents/test-automator.md
   - id: agent/security/backend-security-coder
     kind: agent
@@ -729,7 +729,7 @@ items:
     description: Expert in secure backend coding practices specializing in input validation, authentication, and API security. Use PROACTIVELY for backend security implementatio
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/backend-api-security/agents/backend-security-coder.md
   - id: agent/security/security-auditor
     kind: agent
@@ -740,7 +740,7 @@ items:
     description: Expert security auditor specializing in DevSecOps, comprehensive cybersecurity, and compliance frameworks. Masters vulnerability assessment, threat modeling, se
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/security-compliance/agents/security-auditor.md
   - id: agent/security/threat-modeling-expert
     kind: agent
@@ -751,7 +751,7 @@ items:
     description: Expert in threat modeling methodologies, security architecture review, and risk assessment. Masters STRIDE, PASTA, attack trees, and security requirement extrac
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/security-scanning/agents/threat-modeling-expert.md
   - id: agent/specialized/blockchain-developer
     kind: agent
@@ -762,7 +762,7 @@ items:
     description: "Use this agent when building smart contracts, DApps, and blockchain protocols that require expertise in Solidity, gas optimization, security auditing, and Web3 "
     source:
       repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-      commit: c193ad45419c13ceb49a43740186f680ad5ea264
+      commit: 91810b33c707111e05e0988b12e7385d7b5cfe9d
       path: categories/07-specialized-domains/blockchain-developer.md
   - id: agent/specialized/embedded-systems
     kind: agent
@@ -773,7 +773,7 @@ items:
     description: Use when developing firmware for resource-constrained microcontrollers, implementing RTOS-based applications, or optimizing real-time systems where hardware con
     source:
       repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-      commit: c193ad45419c13ceb49a43740186f680ad5ea264
+      commit: 91810b33c707111e05e0988b12e7385d7b5cfe9d
       path: categories/07-specialized-domains/embedded-systems.md
   - id: agent/specialized/fintech-engineer
     kind: agent
@@ -784,7 +784,7 @@ items:
     description: Use when building payment systems, financial integrations, or compliance-heavy financial applications that require secure transaction processing, regulatory adh
     source:
       repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-      commit: c193ad45419c13ceb49a43740186f680ad5ea264
+      commit: 91810b33c707111e05e0988b12e7385d7b5cfe9d
       path: categories/07-specialized-domains/fintech-engineer.md
   - id: agent/specialized/game-developer
     kind: agent
@@ -795,7 +795,7 @@ items:
     description: Use this agent when implementing game systems, optimizing graphics rendering, building multiplayer networking, or developing gameplay mechanics for games target
     source:
       repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-      commit: c193ad45419c13ceb49a43740186f680ad5ea264
+      commit: 91810b33c707111e05e0988b12e7385d7b5cfe9d
       path: categories/07-specialized-domains/game-developer.md
   - id: agent/specialized/mobile-app-developer
     kind: agent
@@ -806,7 +806,7 @@ items:
     description: Use this agent when developing iOS and Android mobile applications with focus on native or cross-platform implementation, performance optimization, and platform
     source:
       repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-      commit: c193ad45419c13ceb49a43740186f680ad5ea264
+      commit: 91810b33c707111e05e0988b12e7385d7b5cfe9d
       path: categories/07-specialized-domains/mobile-app-developer.md
   - id: agent/utility/accessibility-expert
     kind: agent
@@ -817,7 +817,7 @@ items:
     description: Expert accessibility specialist ensuring WCAG compliance, inclusive design, and assistive technology compatibility. Masters screen reader optimization, keyboard
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/ui-design/agents/accessibility-expert.md
   - id: agent/utility/build-engineer
     kind: agent
@@ -828,7 +828,7 @@ items:
     description: Use this agent when you need to optimize build performance, reduce compilation times, or scale build systems across growing teams.
     source:
       repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-      commit: c193ad45419c13ceb49a43740186f680ad5ea264
+      commit: 91810b33c707111e05e0988b12e7385d7b5cfe9d
       path: categories/06-developer-experience/build-engineer.md
   - id: agent/utility/cli-developer
     kind: agent
@@ -839,7 +839,7 @@ items:
     description: Use this agent when building command-line tools and terminal applications that require intuitive command design, cross-platform compatibility, and optimized dev
     source:
       repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-      commit: c193ad45419c13ceb49a43740186f680ad5ea264
+      commit: 91810b33c707111e05e0988b12e7385d7b5cfe9d
       path: categories/06-developer-experience/cli-developer.md
   - id: agent/utility/dependency-manager
     kind: agent
@@ -850,7 +850,7 @@ items:
     description: Use this agent when you need to audit dependencies for vulnerabilities, resolve version conflicts, optimize bundle sizes, or implement automated dependency upda
     source:
       repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-      commit: c193ad45419c13ceb49a43740186f680ad5ea264
+      commit: 91810b33c707111e05e0988b12e7385d7b5cfe9d
       path: categories/06-developer-experience/dependency-manager.md
   - id: agent/utility/dx-optimizer
     kind: agent
@@ -861,7 +861,7 @@ items:
     description: Use this agent when optimizing the complete developer workflow including build times, feedback loops, testing efficiency, and developer satisfaction metrics acr
     source:
       repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-      commit: c193ad45419c13ceb49a43740186f680ad5ea264
+      commit: 91810b33c707111e05e0988b12e7385d7b5cfe9d
       path: categories/06-developer-experience/dx-optimizer.md
   - id: agent/utility/git-workflow-manager
     kind: agent
@@ -872,7 +872,7 @@ items:
     description: Use this agent when you need to design, establish, or optimize Git workflows, branching strategies, and merge management for a project or team.
     source:
       repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-      commit: c193ad45419c13ceb49a43740186f680ad5ea264
+      commit: 91810b33c707111e05e0988b12e7385d7b5cfe9d
       path: categories/06-developer-experience/git-workflow-manager.md
   - id: agent/utility/incident-responder
     kind: agent
@@ -883,7 +883,7 @@ items:
     description: Expert SRE incident responder specializing in rapid problem resolution, modern observability, and comprehensive incident management. Masters incident command, b
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/incident-response/agents/incident-responder.md
   - id: agent/utility/legacy-modernizer
     kind: agent
@@ -894,7 +894,7 @@ items:
     description: Refactor legacy codebases, migrate outdated frameworks, and implement gradual modernization. Handles technical debt, dependency updates, and backward compatibil
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/code-refactoring/agents/legacy-modernizer.md
   - id: agent/utility/mcp-developer
     kind: agent
@@ -905,7 +905,7 @@ items:
     description: Use this agent when you need to build, debug, or optimize Model Context Protocol (MCP) servers and clients that connect AI systems to external tools and data so
     source:
       repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-      commit: c193ad45419c13ceb49a43740186f680ad5ea264
+      commit: 91810b33c707111e05e0988b12e7385d7b5cfe9d
       path: categories/06-developer-experience/mcp-developer.md
   - id: agent/utility/mermaid-expert
     kind: agent
@@ -916,7 +916,7 @@ items:
     description: Create Mermaid diagrams for flowcharts, sequences, ERDs, and architectures. Masters syntax for all diagram types and styling. Use PROACTIVELY for visual documen
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/documentation-generation/agents/mermaid-expert.md
   - id: agent/utility/network-engineer
     kind: agent
@@ -927,7 +927,7 @@ items:
     description: Expert network engineer specializing in modern cloud networking, security architectures, and performance optimization. Masters multi-cloud connectivity, service
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/cloud-infrastructure/agents/network-engineer.md
   - id: agent/utility/observability-engineer
     kind: agent
@@ -938,7 +938,7 @@ items:
     description: Build production-ready monitoring, logging, and tracing systems. Implements comprehensive observability strategies, SLI/SLO management, and incident response wo
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/observability-monitoring/agents/observability-engineer.md
   - id: agent/utility/refactoring-specialist
     kind: agent
@@ -949,7 +949,7 @@ items:
     description: Use when you need to transform poorly structured, complex, or duplicated code into clean, maintainable systems while preserving all existing behavior.
     source:
       repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-      commit: c193ad45419c13ceb49a43740186f680ad5ea264
+      commit: 91810b33c707111e05e0988b12e7385d7b5cfe9d
       path: categories/06-developer-experience/refactoring-specialist.md
   - id: agent/utility/tutorial-engineer
     kind: agent
@@ -960,7 +960,7 @@ items:
     description: "Creates step-by-step tutorials and educational content from code. Transforms complex concepts into progressive learning experiences with hands-on examples. Use "
     source:
       repo: "https://github.com/wshobson/agents"
-      commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+      commit: c4b82b0ad771190355eb8e204b1329732a18449a
       path: plugins/documentation-generation/agents/tutorial-engineer.md
   - id: skill/algorithmic-art
     kind: skill
@@ -970,7 +970,7 @@ items:
     description: Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generati
     source:
       repo: "https://github.com/anthropics/skills"
-      commit: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
+      commit: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
       path: skills/algorithmic-art
   - id: skill/brainstorming
     kind: skill
@@ -980,7 +980,7 @@ items:
     reason: "3 blocking finding(s) [exfil:exfil.secret_env_read] e.g. scripts/server.cjs:123"
     source:
       repo: "https://github.com/obra/superpowers"
-      commit: d884ae04edebef577e82ff7c4e143debd0bbec99
+      commit: 44c9b2d6e889982ac18c27d05a19fefe335194e1
       path: skills/brainstorming
   - id: skill/brand-guidelines
     kind: skill
@@ -990,7 +990,7 @@ items:
     description: "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand color"
     source:
       repo: "https://github.com/anthropics/skills"
-      commit: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
+      commit: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
       path: skills/brand-guidelines
   - id: skill/canvas-design
     kind: skill
@@ -1000,7 +1000,7 @@ items:
     description: Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, d
     source:
       repo: "https://github.com/anthropics/skills"
-      commit: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
+      commit: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
       path: skills/canvas-design
   - id: skill/claude-api
     kind: skill
@@ -1010,7 +1010,7 @@ items:
     reason: "33 blocking finding(s) [exfil:exfil.secret_env_read, injection:inject.disregard, rce:rce.shell_eval] e.g. csharp/claude-api/README.md:8"
     source:
       repo: "https://github.com/anthropics/skills"
-      commit: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
+      commit: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
       path: skills/claude-api
   - id: skill/context-compaction
     kind: skill
@@ -1031,7 +1031,7 @@ items:
     reason: forced reference (proprietary/unclear license)
     source:
       repo: "https://github.com/anthropics/skills"
-      commit: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
+      commit: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
       path: skills/doc-coauthoring
   - id: skill/docx
     kind: skill
@@ -1041,7 +1041,7 @@ items:
     reason: forced reference (proprietary/unclear license)
     source:
       repo: "https://github.com/anthropics/skills"
-      commit: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
+      commit: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
       path: skills/docx
   - id: skill/executing-plans
     kind: skill
@@ -1051,7 +1051,7 @@ items:
     description: Use when you have a written implementation plan to execute in a separate session with review checkpoints
     source:
       repo: "https://github.com/obra/superpowers"
-      commit: d884ae04edebef577e82ff7c4e143debd0bbec99
+      commit: 44c9b2d6e889982ac18c27d05a19fefe335194e1
       path: skills/executing-plans
   - id: skill/frontend-design
     kind: skill
@@ -1061,7 +1061,7 @@ items:
     description: Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making ch
     source:
       repo: "https://github.com/anthropics/skills"
-      commit: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
+      commit: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
       path: skills/frontend-design
   - id: skill/internal-comms
     kind: skill
@@ -1071,7 +1071,7 @@ items:
     description: "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever "
     source:
       repo: "https://github.com/anthropics/skills"
-      commit: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
+      commit: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
       path: skills/internal-comms
   - id: skill/mcp-builder
     kind: skill
@@ -1081,7 +1081,7 @@ items:
     reason: "2 blocking finding(s) [exfil:exfil.secret_env_read] e.g. reference/node_mcp_server.md:121"
     source:
       repo: "https://github.com/anthropics/skills"
-      commit: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
+      commit: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
       path: skills/mcp-builder
   - id: skill/pdf
     kind: skill
@@ -1091,7 +1091,7 @@ items:
     reason: forced reference (proprietary/unclear license)
     source:
       repo: "https://github.com/anthropics/skills"
-      commit: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
+      commit: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
       path: skills/pdf
   - id: skill/pptx
     kind: skill
@@ -1101,7 +1101,7 @@ items:
     reason: forced reference (proprietary/unclear license)
     source:
       repo: "https://github.com/anthropics/skills"
-      commit: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
+      commit: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
       path: skills/pptx
   - id: skill/receiving-code-review
     kind: skill
@@ -1111,7 +1111,7 @@ items:
     description: "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical "
     source:
       repo: "https://github.com/obra/superpowers"
-      commit: d884ae04edebef577e82ff7c4e143debd0bbec99
+      commit: 44c9b2d6e889982ac18c27d05a19fefe335194e1
       path: skills/receiving-code-review
   - id: skill/requesting-code-review
     kind: skill
@@ -1121,7 +1121,7 @@ items:
     description: Use when completing tasks, implementing major features, or before merging to verify work meets requirements
     source:
       repo: "https://github.com/obra/superpowers"
-      commit: d884ae04edebef577e82ff7c4e143debd0bbec99
+      commit: 44c9b2d6e889982ac18c27d05a19fefe335194e1
       path: skills/requesting-code-review
   - id: skill/skill-creator
     kind: skill
@@ -1131,7 +1131,7 @@ items:
     description: Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an e
     source:
       repo: "https://github.com/anthropics/skills"
-      commit: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
+      commit: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
       path: skills/skill-creator
   - id: skill/slack-gif-creator
     kind: skill
@@ -1141,7 +1141,7 @@ items:
     description: Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request a
     source:
       repo: "https://github.com/anthropics/skills"
-      commit: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
+      commit: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
       path: skills/slack-gif-creator
   - id: skill/subagent-driven-development
     kind: skill
@@ -1151,7 +1151,7 @@ items:
     description: Use when executing implementation plans with independent tasks in the current session
     source:
       repo: "https://github.com/obra/superpowers"
-      commit: d884ae04edebef577e82ff7c4e143debd0bbec99
+      commit: 44c9b2d6e889982ac18c27d05a19fefe335194e1
       path: skills/subagent-driven-development
   - id: skill/systematic-debugging
     kind: skill
@@ -1161,7 +1161,7 @@ items:
     description: Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes
     source:
       repo: "https://github.com/obra/superpowers"
-      commit: d884ae04edebef577e82ff7c4e143debd0bbec99
+      commit: 44c9b2d6e889982ac18c27d05a19fefe335194e1
       path: skills/systematic-debugging
   - id: skill/test-driven-development
     kind: skill
@@ -1171,7 +1171,7 @@ items:
     description: Use when implementing any feature or bugfix, before writing implementation code
     source:
       repo: "https://github.com/obra/superpowers"
-      commit: d884ae04edebef577e82ff7c4e143debd0bbec99
+      commit: 44c9b2d6e889982ac18c27d05a19fefe335194e1
       path: skills/test-driven-development
   - id: skill/theme-factory
     kind: skill
@@ -1181,7 +1181,7 @@ items:
     description: Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fo
     source:
       repo: "https://github.com/anthropics/skills"
-      commit: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
+      commit: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
       path: skills/theme-factory
   - id: skill/token-budget
     kind: skill
@@ -1202,7 +1202,7 @@ items:
     description: Use when starting feature work that needs isolation from current workspace or before executing implementation plans - ensures an isolated workspace exists via n
     source:
       repo: "https://github.com/obra/superpowers"
-      commit: d884ae04edebef577e82ff7c4e143debd0bbec99
+      commit: 44c9b2d6e889982ac18c27d05a19fefe335194e1
       path: skills/using-git-worktrees
   - id: skill/verification-before-completion
     kind: skill
@@ -1212,7 +1212,7 @@ items:
     description: Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output be
     source:
       repo: "https://github.com/obra/superpowers"
-      commit: d884ae04edebef577e82ff7c4e143debd0bbec99
+      commit: 44c9b2d6e889982ac18c27d05a19fefe335194e1
       path: skills/verification-before-completion
   - id: skill/web-artifacts-builder
     kind: skill
@@ -1222,7 +1222,7 @@ items:
     description: Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for
     source:
       repo: "https://github.com/anthropics/skills"
-      commit: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
+      commit: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
       path: skills/web-artifacts-builder
   - id: skill/webapp-testing
     kind: skill
@@ -1232,7 +1232,7 @@ items:
     reason: "1 blocking finding(s) [rce:rce.shell_true] e.g. scripts/with_server.py:69"
     source:
       repo: "https://github.com/anthropics/skills"
-      commit: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
+      commit: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
       path: skills/webapp-testing
   - id: skill/writing-plans
     kind: skill
@@ -1242,7 +1242,7 @@ items:
     description: Use when you have a spec or requirements for a multi-step task, before touching code
     source:
       repo: "https://github.com/obra/superpowers"
-      commit: d884ae04edebef577e82ff7c4e143debd0bbec99
+      commit: 44c9b2d6e889982ac18c27d05a19fefe335194e1
       path: skills/writing-plans
   - id: skill/xlsx
     kind: skill
@@ -1252,5 +1252,5 @@ items:
     reason: forced reference (proprietary/unclear license)
     source:
       repo: "https://github.com/anthropics/skills"
-      commit: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
+      commit: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
       path: skills/xlsx
