@@ -12,7 +12,7 @@ tools:
   - Grep
 source:
   repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-  commit: c193ad45419c13ceb49a43740186f680ad5ea264
+  commit: 91810b33c707111e05e0988b12e7385d7b5cfe9d
   path: categories/06-developer-experience/dx-optimizer.md
 license: MIT
 ---
