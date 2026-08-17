@@ -5,7 +5,7 @@ domain: security
 model: opus
 source:
   repo: "https://github.com/wshobson/agents"
-  commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+  commit: d6837ae274c2cd817acad3fb98f193a4390a4c3e
   path: plugins/security-scanning/agents/threat-modeling-expert.md
 license: MIT
 ---
