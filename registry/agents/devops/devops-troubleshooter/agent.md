@@ -5,7 +5,7 @@ domain: devops
 model: sonnet
 source:
   repo: "https://github.com/wshobson/agents"
-  commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+  commit: d82998e7df393c671ede2387a8435075f0b633f5
   path: plugins/cicd-automation/agents/devops-troubleshooter.md
 license: MIT
 ---

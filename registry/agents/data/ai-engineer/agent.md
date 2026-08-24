@@ -5,7 +5,7 @@ domain: data
 model: inherit
 source:
   repo: "https://github.com/wshobson/agents"
-  commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+  commit: d82998e7df393c671ede2387a8435075f0b633f5
   path: plugins/llm-application-dev/agents/ai-engineer.md
 license: MIT
 ---
@@ -21,7 +21,7 @@ Expert AI engineer specializing in LLM application development, RAG systems, and
 ### LLM Integration & Model Management
 
 - OpenAI GPT-5.4/GPT-5-mini with function calling and structured outputs
-- Anthropic Claude Opus 4.7, Claude Sonnet 4.6, Claude Haiku 4.5 with tool use and computer use
+- Anthropic Claude Opus 4.8, Claude Sonnet 5, Claude Haiku 4.5 with tool use and computer use
 - Open-source models: Llama 3.3, Mixtral 8x22B, Qwen 2.5, DeepSeek-V3
 - Local deployment with Ollama, vLLM, TGI (Text Generation Inference)
 - Model serving with TorchServe, MLflow, BentoML for production deployment
