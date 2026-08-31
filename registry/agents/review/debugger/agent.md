@@ -5,7 +5,7 @@ domain: review
 model: sonnet
 source:
   repo: "https://github.com/wshobson/agents"
-  commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+  commit: 38e19c20d2b154510b0e624a2e3e186b19b5c527
   path: plugins/debugging-toolkit/agents/debugger.md
 license: MIT
 ---
