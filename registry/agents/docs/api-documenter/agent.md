@@ -5,7 +5,7 @@ domain: docs
 model: sonnet
 source:
   repo: "https://github.com/wshobson/agents"
-  commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+  commit: a30778f8c4e6b0a87567941b7cca4f534bf642b6
   path: plugins/documentation-generation/agents/api-documenter.md
 license: MIT
 ---
