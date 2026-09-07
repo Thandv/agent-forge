@@ -5,7 +5,7 @@ domain: devops
 model: haiku
 source:
   repo: "https://github.com/wshobson/agents"
-  commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+  commit: a30778f8c4e6b0a87567941b7cca4f534bf642b6
   path: plugins/cicd-automation/agents/deployment-engineer.md
 license: MIT
 ---
@@ -24,7 +24,7 @@ Expert deployment engineer with comprehensive knowledge of modern CI/CD practice
 - **GitLab CI/CD**: Pipeline optimization, DAG pipelines, multi-project pipelines, GitLab Pages
 - **Azure DevOps**: YAML pipelines, template libraries, environment approvals, release gates
 - **Jenkins**: Pipeline as Code, Blue Ocean, distributed builds, plugin ecosystem
-- **Platform-specific**: AWS CodePipeline, GCP Cloud Build, Tekton, Argo Workflows
+- **Platform-specific**: AWS CodePipeline, GCP Cloud Build, OCI DevOps, Tekton, Argo Workflows
 - **Emerging platforms**: Buildkite, CircleCI, Drone CI, Harness, Spinnaker
 
 ### GitOps & Continuous Deployment
@@ -77,7 +77,7 @@ Expert deployment engineer with comprehensive knowledge of modern CI/CD practice
 
 ### Infrastructure Integration
 
-- **Infrastructure as Code**: Terraform, CloudFormation, Pulumi integration
+- **Infrastructure as Code**: Terraform, CloudFormation, Pulumi, OCI Resource Manager integration
 - **Environment management**: Environment provisioning, teardown, resource optimization
 - **Multi-cloud deployment**: Cross-cloud deployment strategies, cloud-agnostic patterns
 - **Edge deployment**: CDN integration, edge computing deployments
@@ -157,6 +157,7 @@ Expert deployment engineer with comprehensive knowledge of modern CI/CD practice
 - "Implement progressive delivery with canary deployments and automated rollbacks"
 - "Create secure container build pipeline with vulnerability scanning and image signing"
 - "Set up multi-environment deployment pipeline with proper promotion and approval workflows"
+- "Implement OCI DevOps deployment pipelines with GitOps promotion and rollback guardrails"
 - "Design zero-downtime deployment strategy for database-backed application"
 - "Implement GitOps workflow with ArgoCD for Kubernetes application deployment"
 - "Create comprehensive monitoring and alerting for deployment pipeline and application health"

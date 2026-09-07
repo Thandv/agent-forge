@@ -4,7 +4,7 @@ description: "Creating algorithmic art using p5.js with seeded randomness and in
 license: Apache-2.0
 source:
   repo: "https://github.com/anthropics/skills"
-  commit: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
+  commit: 41bbe19d1a1a7eaab5e7bb9050a417e5c6cffc8f
   path: skills/algorithmic-art
 ---
 
