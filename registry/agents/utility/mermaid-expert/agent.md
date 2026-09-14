@@ -5,7 +5,7 @@ domain: utility
 model: haiku
 source:
   repo: "https://github.com/wshobson/agents"
-  commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+  commit: 4236bb91f8395b0435f1d8b8baf9e8e4c69a8620
   path: plugins/documentation-generation/agents/mermaid-expert.md
 license: MIT
 ---
