@@ -18,7 +18,7 @@
 sources:
   - id: wshobson-agents
     repo: https://github.com/wshobson/agents
-    commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+    commit: 4236bb91f8395b0435f1d8b8baf9e8e4c69a8620
     license: MIT
     kind: agents
     mode: vendor
@@ -136,7 +136,7 @@ sources:
 
   - id: anthropics-skills
     repo: https://github.com/anthropics/skills
-    commit: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
+    commit: 34040c9c568585f6929bedeaad110ad08f079624
     kind: skills
     mode: auto                 # license + scan decide vendor vs reference per skill
     skills_dir: skills
@@ -189,7 +189,7 @@ sources:
 
   - id: voltagent-subagents
     repo: https://github.com/VoltAgent/awesome-claude-code-subagents
-    commit: c193ad45419c13ceb49a43740186f680ad5ea264
+    commit: 82b73821baa7a911d5b14cfb6da238b7f0db6b42
     license: MIT
     kind: agents
     mode: vendor
@@ -231,7 +231,7 @@ sources:
 
   - id: superpowers-skills
     repo: https://github.com/obra/superpowers
-    commit: d884ae04edebef577e82ff7c4e143debd0bbec99
+    commit: 5bf4e78011075bcfc0dc295f0724994cd123ee71
     license: MIT
     kind: skills
     mode: auto                 # license inherits source (MIT); scan still gates
