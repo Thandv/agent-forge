@@ -4,7 +4,7 @@ description: "Applies Anthropic's official brand colors and typography to any so
 license: Apache-2.0
 source:
   repo: "https://github.com/anthropics/skills"
-  commit: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
+  commit: 34040c9c568585f6929bedeaad110ad08f079624
   path: skills/brand-guidelines
 ---
 
