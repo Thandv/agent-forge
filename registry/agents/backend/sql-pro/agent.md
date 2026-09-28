@@ -5,7 +5,7 @@ domain: backend
 model: inherit
 source:
   repo: "https://github.com/wshobson/agents"
-  commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+  commit: 9b15b34b0bfc13a815cbfc2366e14ea549e09422
   path: plugins/database-design/agents/sql-pro.md
 license: MIT
 ---
