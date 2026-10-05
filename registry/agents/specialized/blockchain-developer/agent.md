@@ -12,7 +12,7 @@ tools:
   - Grep
 source:
   repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-  commit: c193ad45419c13ceb49a43740186f680ad5ea264
+  commit: 721e9734670bfaf7283194e234ebb88e94c82dcd
   path: categories/07-specialized-domains/blockchain-developer.md
 license: MIT
 ---
