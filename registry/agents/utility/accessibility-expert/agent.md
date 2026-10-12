@@ -5,7 +5,7 @@ domain: utility
 model: inherit
 source:
   repo: "https://github.com/wshobson/agents"
-  commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+  commit: 46891e7e60da0e52baf1050b7b6391b64e84c6d9
   path: plugins/ui-design/agents/accessibility-expert.md
 license: MIT
 ---
