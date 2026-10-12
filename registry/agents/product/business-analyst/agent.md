@@ -13,7 +13,7 @@ tools:
   - WebSearch
 source:
   repo: "https://github.com/VoltAgent/awesome-claude-code-subagents"
-  commit: c193ad45419c13ceb49a43740186f680ad5ea264
+  commit: 408d3c9eee2d0c75c12a3abb5de29e53c2ca6b9e
   path: categories/08-business-product/business-analyst.md
 license: MIT
 ---
