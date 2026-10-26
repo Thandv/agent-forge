@@ -5,7 +5,7 @@ domain: languages
 model: opus
 source:
   repo: "https://github.com/wshobson/agents"
-  commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+  commit: 0874a27b17a22e2b7c2e2bcd725768e0803cad06
   path: plugins/systems-programming/agents/golang-pro.md
 license: MIT
 ---
