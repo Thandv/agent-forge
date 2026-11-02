@@ -5,7 +5,7 @@ domain: backend
 model: inherit
 source:
   repo: "https://github.com/wshobson/agents"
-  commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+  commit: 7e2fb559cf4b824b27f1fec49fe88f7511066d26
   path: plugins/application-performance/agents/performance-engineer.md
 license: MIT
 ---
