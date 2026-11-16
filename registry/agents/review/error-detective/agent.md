@@ -5,7 +5,7 @@ domain: review
 model: sonnet
 source:
   repo: "https://github.com/wshobson/agents"
-  commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+  commit: 9c61ab243def98f72da12abd41cfcf5bcd91af9d
   path: plugins/distributed-debugging/agents/error-detective.md
 license: MIT
 ---

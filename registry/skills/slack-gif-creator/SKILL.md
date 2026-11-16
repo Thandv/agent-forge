@@ -4,7 +4,7 @@ description: "Knowledge and utilities for creating animated GIFs optimized for S
 license: Apache-2.0
 source:
   repo: "https://github.com/anthropics/skills"
-  commit: 9d2f1ae187231d8199c64b5b762e1bdf2244733d
+  commit: 1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064
   path: skills/slack-gif-creator
 ---
 
