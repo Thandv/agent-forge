@@ -5,7 +5,7 @@ domain: experts
 model: inherit
 source:
   repo: "https://github.com/0xfurai/claude-code-subagents"
-  commit: 9236d10702cdbba37eaa34515f1e1dbff8452506
+  commit: 6b76c35f3d8f68a44274a099e8c06ba451e60f62
   path: agents/kafka-expert.md
 license: MIT
 ---

@@ -5,7 +5,7 @@ domain: devops
 model: opus
 source:
   repo: "https://github.com/wshobson/agents"
-  commit: 5cc2549a50fc672230efd0a0307e2fd27ffba792
+  commit: 1eecf4b58eb380ff7ddc258a11c6586381d67b95
   path: plugins/kubernetes-operations/agents/kubernetes-architect.md
 license: MIT
 ---
